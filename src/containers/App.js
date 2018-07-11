@@ -7,6 +7,7 @@ import { logout } from '../actions/userActions';
 
 // Components
 import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 
 class App extends Component {
 	constructor() {
@@ -26,6 +27,11 @@ class App extends Component {
 					handleInputChange={this.handleInputChange}
 					logout={this.props.logout}
 				/>
+				<div className="container-fluid">
+					<div className="row">
+						<Sidebar />
+					</div>
+				</div>
 			</div>
 		);
 	}
