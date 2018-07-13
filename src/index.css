@@ -82,11 +82,13 @@ body {
  */
 
 .navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  padding-top: .45rem;
+  padding-bottom: .45rem;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .navbar .form-control {
@@ -122,4 +124,21 @@ body {
   color: #32cefe;
   font-weight: 700;
   background-color: transparent;
+}
+
+.search-results {
+  padding-bottom: 2rem;
+}
+
+.blue {
+  color: #32cefe;
+  font-size: 1.4rem;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 1px solid #e6e6e6;
 }
