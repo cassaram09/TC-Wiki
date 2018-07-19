@@ -1,45 +1,47 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
-
-// Actions
-import { logout } from '../actions/userActions';
+import React from 'react';
 
 // Components
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
+import SearchResults from '../components/SearchResults';
+import Aaq from '../components/Aaq';
+import StudyGroups from '../components/StudyGroups';
+import OneOnOnes from '../components/OneOnOnes';
+import CurriculumUpdates from '../components/CurriculumUpdates';
+import QuickLinks from '../components/QuickLinks';
+import TeamInfo from '../components/TeamInfo';
 
-class App extends Component {
-	constructor() {
-		super();
-
-		this.state = {
-			searchTerm: '',
-			searchResults: []
-		};
-	}
-
-	render() {
-		return (
-			<div className="App">
-				<Navbar
-					fetchRepos={this.fetchRepos}
-					handleInputChange={this.handleInputChange}
-					logout={this.props.logout}
-				/>
-				<div className="container-fluid">
-					<div className="row">
-						<Sidebar />
+const App = () => (
+	<div className="row">
+		<div className="col-lg-8">
+			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom ">
+				<h1>Welcome to the TC Dashboard</h1>
+				{/* <div className="btn-toolbar mb-2 mb-md-0">
+					<div className="btn-group mr-2">
+						<button className="btn btn-sm btn-outline-secondary">Share</button>
+						<button className="btn btn-sm btn-outline-secondary">Export</button>
 					</div>
+					<button className="btn btn-sm btn-outline-secondary dropdown-toggle">
+						<FileText />
+						This week
+					</button>
+				</div> */}
+			</div>
+			<SearchResults />
+			<QuickLinks />
+			<TeamInfo />
+			<div className="row">
+				<div className="col-8">
+					<Aaq />
+				</div>
+				<div className="col-4">
+					<StudyGroups />
+					<OneOnOnes />
 				</div>
 			</div>
-		);
-	}
-}
-
-export default withRouter(
-	connect(
-		null,
-		{ logout }
-	)(App)
+		</div>
+		<div className="col-lg-4 updates-container">
+			<CurriculumUpdates />
+		</div>
+	</div>
 );
+
+export default App;
