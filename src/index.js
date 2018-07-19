@@ -14,6 +14,15 @@ import App from './containers/App';
 import Loading from './containers/Loading';
 import Authentication from './containers/Authentication';
 import Login from './containers/Login';
+import StudyGroups from './components/StudyGroups';
+import Aaq from './components/Aaq';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import OneOnOnes from './components/OneOnOnes';
+import CurriculumUpdates from './components/CurriculumUpdates';
+import VirtualBox from './components/VirtualBox';
+import OngoingInfo from './components/OngoingInfo';
+import JiraTickets from './components/JiraTickets';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
@@ -24,9 +33,30 @@ ReactDOM.render(
 				<Switch>
 					<Route exact path="/login" component={Login} />
 					<Authentication>
-						<Switch>
-							<Route exact path="/" component={App} />
-						</Switch>
+						<div className="App">
+							<Navbar />
+							<div className="container-fluid">
+								<div className="row">
+									<Sidebar />
+									<div className="container-fluid">
+										<div className="row">
+											<main role="main" className="col-md-9 ml-sm-auto col-lg-10 ">
+												<Switch>
+													<Route exact path="/" component={App} />
+													<Route exact path="/study-groups" component={StudyGroups} />
+													<Route exact path="/aaq" component={Aaq} />
+													<Route exact path="/one-on-ones" component={OneOnOnes} />
+													<Route exact path="/curriculum-updates" component={CurriculumUpdates} />
+													<Route exact path="/shift-info" component={OngoingInfo} />
+													<Route exact path="/virtual-box" component={VirtualBox} />
+													<Route exact path="/jira-tickets" component={JiraTickets} />
+												</Switch>
+											</main>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</Authentication>
 				</Switch>
 			</Loading>
