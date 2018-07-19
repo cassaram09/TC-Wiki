@@ -1,11 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-const Navbar = ({ handleInputChange, fetchRepos, logout }) => (
+// Actions
+import { logout } from '../actions/userActions';
+
+// Components
+import SearchBar from './SearchBar';
+
+const Navbar = ({ logout }) => (
 	<nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-		<a className="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
-			TC Dashboard
-		</a>
+		<NavLink exact to="/" className="navbar-brand col-sm-3 col-md-2 mr-0" title="Home">
+			<span className="blue">//</span> TC DASHBOARD
+		</NavLink>
+
+		<SearchBar />
 
 		<ul className="navbar-nav px-3">
 			<li className="nav-item text-nowrap">
@@ -17,4 +26,7 @@ const Navbar = ({ handleInputChange, fetchRepos, logout }) => (
 	</nav>
 );
 
-export default Navbar;
+export default connect(
+	null,
+	{ logout }
+)(Navbar);
