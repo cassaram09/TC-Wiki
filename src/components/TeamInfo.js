@@ -59,7 +59,9 @@ const TeamInfo = () => (
 						</tr>
 					</tbody>
 				</table>
-				TCL (Technical Coach Lead), TC (Technical Coach), TCF (Technical Coach Fellow)
+				<small className="text-muted">
+					TCL (Technical Coach Lead), TC (Technical Coach), TCF (Technical Coach Fellow)
+				</small>
 			</div>
 		</div>
 		<div className="col-8">
