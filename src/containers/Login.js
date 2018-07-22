@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 // Actions
 import { githubLogin, getUser } from '../actions/userActions';
+import { Github } from '../components/Svg';
 
 class Login extends Component {
 	constructor(props) {
@@ -40,9 +41,12 @@ class Login extends Component {
 
 	render() {
 		return (
-			<button type="button" className="btn btn-primary" onClick={this.props.githubLogin}>
-				Login with Github
-			</button>
+			<div className="login">
+				<button type="button" className="" onClick={this.props.githubLogin}>
+					<Github />{"   "}
+					Login with Github
+				</button>
+			</div>
 		);
 	}
 }

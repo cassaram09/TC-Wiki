@@ -109,6 +109,37 @@ h6,
     margin: 5rem auto;
 }
 
+.login {
+    padding-top: 10rem;
+    text-align: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.login button {
+    background-color: #32cefe;
+    border-color: transparent;
+    border-radius: .25rem;
+    box-shadow: 0 6px #2dbbe6;
+    position: relative;
+    color: #fff;
+    padding: .7rem 1.6rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    outline: none;
+    cursor: pointer;
+}
+
+.login button .feather {
+    width: 20px;
+    height: 20px;
+}
+
+.login button:hover {
+    box-shadow: 0 4px #2dbbe6;
+    top: 2px;
+}
+
 /* Navbar */
 .navbar-brand {
     padding-top: .45rem;

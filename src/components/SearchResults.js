@@ -57,7 +57,6 @@ const SearchResults = ({ repos, clearResults, loading }) => {
 };
 
 function mapStateToProps(state) {
-	console.log(state.search.repos);
 	return {
 		repos: state.search.repos,
 		loading: state.search.loading
