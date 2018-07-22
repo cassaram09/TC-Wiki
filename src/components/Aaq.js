@@ -7,8 +7,8 @@ const Aaq = () => (
 		</div>
 
 		<h2>Quick Snippets</h2>
-		<div class="card mb-3">
-			<div class="card-header">
+		<div className="card mb-3">
+			<div className="card-header">
 				<ul className="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
 					<li className="nav-item">
 						<a
@@ -111,8 +111,8 @@ const Aaq = () => (
 
 		<h2>Escalation</h2>
 
-		<div class="card mb-3">
-			<div class="card-header">
+		<div className="card mb-3">
+			<div className="card-header">
 				<ul className="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
 					<li className="nav-item">
 						<a
