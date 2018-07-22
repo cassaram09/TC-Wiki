@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import { Book, Users, File, Info, Box, Code, Rss } from './Svg';
+import { Book, Users, File, Info, Box, Code, Rss, Flag } from './Svg';
 
 const Sidebar = ({ user }) => {
 	return (
@@ -70,6 +70,12 @@ const Sidebar = ({ user }) => {
 							<NavLink exact to="/curriculum-updates" className="nav-link pl-0" title="Curriculum Updates">
 								<Rss />
 								<span class="d-none d-md-inline">Curriculum Updates</span>
+							</NavLink>
+						</li>
+						<li className="nav-item">
+							<NavLink exact to="/common-errors" className="nav-link pl-0" title="Common Errors">
+								<Flag />
+								<span class="d-none d-md-inline">Common Errors</span>
 							</NavLink>
 						</li>
 					</ul>

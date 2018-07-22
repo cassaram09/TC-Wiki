@@ -23,6 +23,7 @@ import CurriculumUpdates from './components/CurriculumUpdates';
 import VirtualBox from './components/VirtualBox';
 import OngoingInfo from './components/OngoingInfo';
 import JiraTickets from './components/JiraTickets';
+import CommonErrors from './components/CommonErrors';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
@@ -48,6 +49,7 @@ ReactDOM.render(
 											<Route exact path="/shift-info" component={OngoingInfo} />
 											<Route exact path="/virtual-box" component={VirtualBox} />
 											<Route exact path="/jira-tickets" component={JiraTickets} />
+											<Route exact path="/common-errors" component={CommonErrors} />
 										</Switch>
 									</main>
 								</div>
