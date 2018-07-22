@@ -129,14 +129,6 @@ h6,
 }
 
 /* Utilities */
-code {
-    display: block;
-    white-space: pre-wrap;
-    padding: 15px;
-    background: #f8f9fa;
-    border: 1px solid #e6e6e6;
-}
-
 .border-top {
     border-top: 1px solid #fff;
 }
