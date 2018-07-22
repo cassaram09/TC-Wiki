@@ -232,8 +232,8 @@ const Aaq = () => (
 				<li>Go to pull requests to see other students solutions in one place</li>
 				<li>Have your labs on your machine and open them there</li>
 				<li>
-					Clone down students code (this allows you to
-					<a href="https://stackoverflow.com/questions/9834689/comparing-two-branches-in-git">see a diff</a>
+					Clone down students code (this allows you to{' '}
+					<a href="https://stackoverflow.com/questions/9834689/comparing-two-branches-in-git">see a diff</a>{' '}
 					with the solution branch)
 				</li>
 			</ul>
