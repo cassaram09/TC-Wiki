@@ -101,8 +101,12 @@ h6,
     height: 50px;
 }
 
-.loading {
+.loading-home {
     margin: 15rem auto;
+}
+
+.loading-repos {
+    margin: 5rem auto;
 }
 
 /* Navbar */

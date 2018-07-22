@@ -28,7 +28,6 @@ export function fetchRepos(searchTerm) {
 		)
 			.then(res => res.json())
 			.then(data => {
-				// console.log(data);
 				dispatch(fetchReposSuccess(data));
 				return data;
 			})

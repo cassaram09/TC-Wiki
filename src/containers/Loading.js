@@ -20,7 +20,7 @@ class Loading extends Component {
 		if (!userLoading || this.props.user === null) {
 			return <React.Fragment>{children}</React.Fragment>;
 		} else {
-			return <ReactLoading type="bubbles" color="#32cefe" height={64} width={64} className="loading" />;
+			return <ReactLoading type="bubbles" color="#32cefe" height={64} width={64} className="loading-home" />;
 		}
 	}
 }

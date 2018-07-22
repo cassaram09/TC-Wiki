@@ -20,6 +20,10 @@ class SearchBar extends Component {
 		if (searchTerm) {
 			this.props.fetchRepos(searchTerm);
 		}
+
+		this.setState({
+			searchTerm: ''
+		})
 	};
 
 	handleInputChange = e => {
@@ -37,6 +41,7 @@ class SearchBar extends Component {
 					placeholder="Search GitHub"
 					aria-label="Search"
 					onChange={this.handleInputChange}
+					value={this.state.searchTerm}
 				/>
 			</form>
 		);

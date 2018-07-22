@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import { Github } from './Svg';
+import ReactLoading from 'react-loading';
 
 class CurriculumUpdates extends Component {
 	constructor() {
 		super();
 
 		this.state = {
-			updates: []
+			updates: [],
+			loading: false
 		};
 	}
 
 	fetchEvents = () => {
+		this.setState({
+			loading: true
+		});
+
 		return fetch(`https://api.github.com/orgs/learn-co-curriculum/events`, {
 			headers: {
 				Accept: 'application/vnd.github.v3.text-match+json'
@@ -19,7 +25,8 @@ class CurriculumUpdates extends Component {
 			.then(res => res.json())
 			.then(data => {
 				this.setState({
-					updates: data
+					updates: data,
+					loading: false
 				});
 			});
 	};
@@ -75,67 +82,71 @@ class CurriculumUpdates extends Component {
 					</button>
 				</div>
 
-				<ul className={this.state.updates.length !== 0 ? 'timeline' : ''}>
-					{this.state.updates
-						.filter(
-							event =>
-								event.type === 'IssuesEvent' ||
-								event.type === 'IssueCommentEvent' ||
-								event.type === 'PushEvent'
-						)
-						.map(update => (
-							<li key={update.id} className="event">
-								<p className="text-muted">{this.formatDate(new Date(update.created_at))}</p>
+				{!this.state.loading ? (
+					<ul className={this.state.updates.length !== 0 ? 'timeline' : ''}>
+						{this.state.updates
+							.filter(
+								event =>
+									event.type === 'IssuesEvent' ||
+									event.type === 'IssueCommentEvent' ||
+									event.type === 'PushEvent'
+							)
+							.map(update => (
+								<li key={update.id} className="event">
+									<p className="text-muted">{this.formatDate(new Date(update.created_at))}</p>
 
-								<a
-									target="_blank"
-									href={update.repo.url.replace('https://api.github.com/repos/', 'https://github.com/')}
-								>
-									<h5>{update.repo.name.split('/').pop()}</h5>
-								</a>
+									<a
+										target="_blank"
+										href={update.repo.url.replace('https://api.github.com/repos/', 'https://github.com/')}
+									>
+										<h5>{update.repo.name.split('/').pop()}</h5>
+									</a>
 
-								<div className="description">
-									{update.payload.issue ? (
-										<span>
-											Issue Title:{' '}
-											<a
-												target="_blank"
-												href={`${update.repo.url.replace(
-													'https://api.github.com/repos/',
-													'https://github.com/'
-												)}/issues/${update.payload.issue.number}`}
-											>
-												{update.payload.issue.title}
-											</a>
-										</span>
-									) : (
-										<span>
-											Commits:
-											<ul>
-												{update.payload.commits.map(commit => (
-													<li key={commit.sha}>
-														<a
-															target="_blank"
-															href={`${update.repo.url.replace(
-																'https://api.github.com/repos/',
-																'https://github.com/'
-															)}/commit/${commit.sha}`}
-														>
-															{commit.message}
-														</a>
-													</li>
-												))}
-											</ul>
-										</span>
-									)}
-								</div>
-								<small className="text-muted">
-									Event: {update.type.replace('Event', '')}{' '}
-									{update.payload.action && `(${update.payload.action})`}
-								</small>
-							</li>
-						))}
-				</ul>
+									<div className="description">
+										{update.payload.issue ? (
+											<span>
+												Issue Title:{' '}
+												<a
+													target="_blank"
+													href={`${update.repo.url.replace(
+														'https://api.github.com/repos/',
+														'https://github.com/'
+													)}/issues/${update.payload.issue.number}`}
+												>
+													{update.payload.issue.title}
+												</a>
+											</span>
+										) : (
+											<span>
+												Commits:
+												<ul>
+													{update.payload.commits.map(commit => (
+														<li key={commit.sha}>
+															<a
+																target="_blank"
+																href={`${update.repo.url.replace(
+																	'https://api.github.com/repos/',
+																	'https://github.com/'
+																)}/commit/${commit.sha}`}
+															>
+																{commit.message}
+															</a>
+														</li>
+													))}
+												</ul>
+											</span>
+										)}
+									</div>
+									<small className="text-muted">
+										Event: {update.type.replace('Event', '')}{' '}
+										{update.payload.action && `(${update.payload.action})`}
+									</small>
+								</li>
+							))}
+					</ul>
+				) : (
+					<ReactLoading type="bubbles" color="#32cefe" height={64} width={64} className="loading-repos" />
+				)}
 			</React.Fragment>
 		);
 	}
