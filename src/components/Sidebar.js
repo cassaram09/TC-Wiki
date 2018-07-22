@@ -24,6 +24,11 @@ const Sidebar = ({ user }) => {
 							<img className="d-md-none d-inline profile-img" src={user.photoURL} alt="" />
 						</li>
 						<li className="nav-item">
+							<NavLink exact to="/" className="nav-link home-sidebar-link" title="Home">
+								<span className="feather logo-home">//</span> <span className="d-none d-md-inline">Home</span>
+							</NavLink>
+						</li>
+						<li className="nav-item">
 							<NavLink exact to="/aaq" className="nav-link pl-0" title="AAQ">
 								<File />
 								<span className="d-none d-md-inline">AAQ</span>

@@ -77,6 +77,15 @@ h6,
     text-transform: uppercase;
 }
 
+.home-sidebar-link {
+    padding-left: .2rem !important;
+}
+
+.sidebar .logo-home {
+    font-size: 1.2rem;
+    line-height: 1.15rem;
+}
+
 /* Content */
 [role="main"] {
     padding-top: 3rem;
