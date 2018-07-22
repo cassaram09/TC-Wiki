@@ -16,7 +16,11 @@ const SearchResults = ({ repos, clearResults, loading }) => {
 							Clear Results
 						</button>
 						<small>
-							<a target="_blank" href="https://developer.github.com/v3/search/#ranking-search-results">
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://developer.github.com/v3/search/#ranking-search-results"
+							>
 								Match Score
 							</a>
 						</small>
