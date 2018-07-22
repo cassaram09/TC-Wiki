@@ -2,7 +2,7 @@ import React from 'react';
 
 const TeamInfo = () => (
 	<div className="row">
-		<div className="col-4">
+		<div className="col-lg-4">
 			<h3>TC Teams</h3>
 			<div className="table-responsive">
 				<table className="table table-striped table-sm">
@@ -64,7 +64,7 @@ const TeamInfo = () => (
 				</small>
 			</div>
 		</div>
-		<div className="col-8">
+		<div className="col-lg-8">
 			<a
 				target="_blank"
 				rel="noopener noreferrer"

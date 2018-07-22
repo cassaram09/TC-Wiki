@@ -29,7 +29,6 @@ const OneOnOnes = () => {
 					</div>
 				</a>
 			</div>
-			<img src="../shared/images/youtube.svg" alt="" />
 		</div>
 	);
 };

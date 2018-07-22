@@ -7,10 +7,11 @@ import { logout } from '../actions/userActions';
 
 // Components
 import SearchBar from './SearchBar';
+import { LogOut } from './Svg';
 
 const Navbar = ({ logout }) => (
-	<nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-		<NavLink exact to="/" className="navbar-brand col-sm-3 col-md-2 mr-0" title="Home">
+	<nav className="navbar navbar-dark fixed-top bg-dark flex-nowrap p-0 shadow">
+		<NavLink exact to="/" className="navbar-brand col-lg-3 col-xl-2 col-md-3 col-auto mr-0" title="Home">
 			<span className="blue">//</span> TC DASHBOARD
 		</NavLink>
 
@@ -19,7 +20,7 @@ const Navbar = ({ logout }) => (
 		<ul className="navbar-nav px-3">
 			<li className="nav-item text-nowrap">
 				<NavLink exact to="/login" className="nav-link" onClick={logout} title="Sign Out">
-					Sign Out
+					<LogOut />
 				</NavLink>
 			</li>
 		</ul>
