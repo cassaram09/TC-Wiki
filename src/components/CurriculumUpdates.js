@@ -96,7 +96,18 @@ class CurriculumUpdates extends Component {
 
 								<div className="description">
 									{update.payload.issue ? (
-										<span>Issue Title: {update.payload.issue.title}</span>
+										<span>
+											Issue Title:{' '}
+											<a
+												target="_blank"
+												href={`${update.repo.url.replace(
+													'https://api.github.com/repos/',
+													'https://github.com/'
+												)}/issues/${update.payload.issue.number}`}
+											>
+												{update.payload.issue.title}
+											</a>
+										</span>
 									) : (
 										<span>
 											Commits:
