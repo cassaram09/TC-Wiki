@@ -33,27 +33,23 @@ ReactDOM.render(
 				<Switch>
 					<Route exact path="/login" component={Login} />
 					<Authentication>
-						<div className="App">
+						<div className="app">
 							<Navbar />
-							<div className="container-fluid">
-								<div className="row">
+							<div className="container-fluid h-100">
+								<div className="row h-100">
 									<Sidebar />
-									<div className="container-fluid">
-										<div className="row">
-											<main role="main" className="col-md-9 ml-sm-auto col-lg-10 ">
-												<Switch>
-													<Route exact path="/" component={App} />
-													<Route exact path="/study-groups" component={StudyGroups} />
-													<Route exact path="/aaq" component={Aaq} />
-													<Route exact path="/one-on-ones" component={OneOnOnes} />
-													<Route exact path="/curriculum-updates" component={CurriculumUpdates} />
-													<Route exact path="/shift-info" component={OngoingInfo} />
-													<Route exact path="/virtual-box" component={VirtualBox} />
-													<Route exact path="/jira-tickets" component={JiraTickets} />
-												</Switch>
-											</main>
-										</div>
-									</div>
+									<main role="main" className="col">
+										<Switch>
+											<Route exact path="/" component={App} />
+											<Route exact path="/study-groups" component={StudyGroups} />
+											<Route exact path="/aaq" component={Aaq} />
+											<Route exact path="/one-on-ones" component={OneOnOnes} />
+											<Route exact path="/curriculum-updates" component={CurriculumUpdates} />
+											<Route exact path="/shift-info" component={OngoingInfo} />
+											<Route exact path="/virtual-box" component={VirtualBox} />
+											<Route exact path="/jira-tickets" component={JiraTickets} />
+										</Switch>
+									</main>
 								</div>
 							</div>
 						</div>
