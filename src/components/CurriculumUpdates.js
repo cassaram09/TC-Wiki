@@ -18,8 +18,6 @@ class CurriculumUpdates extends Component {
 		})
 			.then(res => res.json())
 			.then(data => {
-				console.log(data);
-
 				this.setState({
 					updates: data
 				});
@@ -54,7 +52,7 @@ class CurriculumUpdates extends Component {
 
 		var ampm = hours >= 12 ? 'PM' : 'AM';
 		hours = hours % 12;
-		hours = hours ? hours : 12; // the hour '0' should be '12'
+		hours = hours ? hours : 12;
 		minutes = minutes < 10 ? '0' + minutes : minutes;
 		var strTime = hours + ':' + minutes + ' ' + ampm;
 
@@ -66,7 +64,7 @@ class CurriculumUpdates extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+				<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
 					<h1>Curriculum Updates</h1>
 					<button
 						type="button"
@@ -77,7 +75,7 @@ class CurriculumUpdates extends Component {
 					</button>
 				</div>
 
-				<ul className={this.state.updates.length !== 0 && 'timeline'}>
+				<ul className={this.state.updates.length !== 0 ? 'timeline' : ''}>
 					{this.state.updates
 						.filter(
 							event =>
@@ -86,7 +84,7 @@ class CurriculumUpdates extends Component {
 								event.type === 'PushEvent'
 						)
 						.map(update => (
-							<li className="event">
+							<li key={update.id} className="event">
 								<p className="text-muted">{this.formatDate(new Date(update.created_at))}</p>
 
 								<a
