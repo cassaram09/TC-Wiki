@@ -173,7 +173,8 @@ ul.timeline {
     position: relative;
     list-style-type: none;
     padding-left: 47px;
-    padding-top: 34px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
 }
 
 ul.timeline:before {
@@ -219,5 +220,11 @@ ul.timeline h5 {
 @media (max-width: 768px) {
     [role="main"] {
         padding-top: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-columns {
+        column-count: auto;
     }
 }
