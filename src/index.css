@@ -101,6 +101,10 @@ h6,
     height: 50px;
 }
 
+.loading {
+    margin: 15rem auto;
+}
+
 /* Navbar */
 .navbar-brand {
     padding-top: .45rem;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import ReactLoading from 'react-loading';
 
 // Actions
 import { getUser } from '../actions/userActions';
@@ -19,7 +20,7 @@ class Loading extends Component {
 		if (!userLoading || this.props.user === null) {
 			return <React.Fragment>{children}</React.Fragment>;
 		} else {
-			return <div>Loading...</div>;
+			return <ReactLoading type="bubbles" color="#32cefe" height={64} width={64} className="loading" />;
 		}
 	}
 }
