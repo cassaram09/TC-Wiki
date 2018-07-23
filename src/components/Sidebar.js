@@ -9,14 +9,14 @@ const Sidebar = ({ user }) => {
 	return (
 		<aside className="col-12 col-lg-3 col-xl-2 col-md-3 bg-light sidebar">
 			<nav className="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
-				<div className="collapse navbar-collapse">
+				<div className="collapse navbar-collapse w-100">
 					<ul className="flex-md-column flex-row navbar-nav w-100 justify-content-between">
 						<div className="d-none d-md-flex row border-bottom align-items-center flex-wrap flex-md-nowrap pt-0 pb-2 mb-3 border-bottom">
-							<div className="col-4 pr-0">
-								<img className="img-fluid" src={user.photoURL} alt="" />
+							<div className="col-auto pr-0">
+								<img className="profile-img" src={user.photoURL} alt="" />
 							</div>
-							<div className="col-8">
-								<h5 className="mb-0">{user.displayName}</h5>
+							<div className="col">
+								<h5 className="mb-0 profile-name">{user.displayName}</h5>
 								<small className="mb-0">Tech Coach Lead</small>
 							</div>
 						</div>
