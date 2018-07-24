@@ -20,11 +20,16 @@ const App = () => (
 			<SearchResults />
 			<QuickLinks />
 			<div className="row">
-				<div className="col-lg-8">
+				<div className="col">
 					<Aaq more={false} />
 				</div>
+				
+			</div>
+			<div className="row">
+				<div className="col-lg-8">
+				<StudyGroups more={false} />
+				</div>
 				<div className="col-lg-4">
-					<StudyGroups more={false} />
 					<OneOnOnes more={false} />
 				</div>
 			</div>
