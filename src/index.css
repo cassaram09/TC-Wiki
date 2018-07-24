@@ -158,6 +158,10 @@ h6,
     top: 2px;
 }
 
+.table-wrapper {
+    overflow: auto;
+}
+
 /* Navbar */
 .navbar-brand {
     padding-top: .45rem;
