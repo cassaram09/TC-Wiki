@@ -2,13 +2,15 @@ import {
 	FETCH_REPOS_BEGIN,
 	FETCH_REPOS_SUCCESS,
 	FETCH_REPOS_FAILURE,
-	CLEAR_REPOS
+	CLEAR_REPOS,
+	NO_MATCH_FOUND
 } from '../actions/actionTypes';
 
 const initialState = {
 	repos: [],
 	loading: false,
-	error: null
+	error: null,
+	matchFound: ''
 };
 
 export default function(state = initialState, action) {
@@ -34,6 +36,13 @@ export default function(state = initialState, action) {
 			};
 		case CLEAR_REPOS:
 			return initialState;
+		case NO_MATCH_FOUND:
+			return {
+				...state,
+				loading: false,
+				repos: [],
+				matchFound: action.payload
+			};
 		default:
 			return state;
 	}

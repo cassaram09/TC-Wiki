@@ -1,4 +1,4 @@
-import { FETCH_REPOS_BEGIN, FETCH_REPOS_SUCCESS, FETCH_REPOS_FAILURE, CLEAR_REPOS } from './actionTypes';
+import { FETCH_REPOS_BEGIN, FETCH_REPOS_SUCCESS, FETCH_REPOS_FAILURE, CLEAR_REPOS, NO_MATCH_FOUND } from './actionTypes';
 
 const fetchReposBegin = () => ({
 	type: FETCH_REPOS_BEGIN
@@ -14,6 +14,11 @@ const fetchReposError = error => ({
 	payload: { error }
 });
 
+const noMatchFound = (searchTerm) => ({
+	type: NO_MATCH_FOUND,
+	payload: searchTerm
+})
+
 export function fetchRepos(searchTerm) {
 	return dispatch => {
 		dispatch(fetchReposBegin());
@@ -28,10 +33,16 @@ export function fetchRepos(searchTerm) {
 		)
 			.then(res => res.json())
 			.then(data => {
-				dispatch(fetchReposSuccess(data));
-				return data;
+				if (data.total_count !== 0) {
+					dispatch(fetchReposSuccess(data));
+					return data;
+				} else {
+					dispatch(noMatchFound(searchTerm));
+				}
 			})
-			.catch(error => dispatch(fetchReposError(error)));
+			.catch(error => {
+				dispatch(fetchReposError(error));
+			});
 	};
 }
 
