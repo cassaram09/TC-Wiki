@@ -168,6 +168,19 @@ const Aaq = ({ more = true }) => (
 							Slow Day
 						</a>
 					</li>
+					<li className="nav-item">
+						<a
+							className="nav-link"
+							id="project-tab"
+							data-toggle="tab"
+							href="#project"
+							role="tab"
+							aria-controls="project"
+							aria-selected="false"
+						>
+							Project Support in AAQ
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div className="tab-content " id="myTabContent">
@@ -182,7 +195,8 @@ const Aaq = ({ more = true }) => (
 						<a target="_blank" rel="noopener noreferrer" href="https://learn-co.slack.com/messages/G0B6FET6G">
 							Online Web Developer Channel
 						</a>{' '}
-						in the student slack (learn.co) to tell students that they should ask questions in Slack until the chat is back up.
+						in the student slack (learn.co) to tell students that they should ask questions in Slack until the
+						chat is back up.
 					</p>
 					<p>
 						Example:{' '}
@@ -209,63 +223,113 @@ const Aaq = ({ more = true }) => (
 					role="tabpanel"
 					aria-labelledby="rudeStudent-tab"
 				>
-					Add a note to the students profile (at the bottom of chat):
-					<img src="/leave-note.png" alt="" class="img-thumbnail mt-3" />
+					<p>Add a note to the students profile (at the bottom of chat):</p>
+					<img src="/leave-note.png" alt="" class="img-thumbnail" />
 				</div>
 				<div className="tab-pane fade card-body" id="slowDay" role="tabpanel" aria-labelledby="slowDay-tab">
 					<ul>
 						<li>Resolve old questions</li>
 					</ul>
 				</div>
+				<div className="tab-pane fade card-body" id="project" role="tabpanel" aria-labelledby="project-tab">
+					<h5>We do not help students with their project in AAQ.</h5>
+					<p>
+						If a student needs help with their project even if its environment support please give them the{' '}
+						<a href="https://theflatironschool.typeform.com/to/B9BrgH">project support link</a> and any
+						additional resources that they need. Most students who are having GitHub, environment issues in
+						project mode is because their files are not set up correctly which can be solved by sending them
+						to the correct lesson that shows file structure and sharing the 1:1 support link.
+					</p>
+				</div>
 			</div>
 		</div>
 		{more && (
 			<React.Fragment>
 				<h2>Tips</h2>
-				<ul>
-					<li>Watch Slack & AAQ</li>
-					<li>Tools to consider:</li>
-					<ul>
-						<li>
-							<a
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://chrome.google.com/webstore/detail/le3/hjjhpafjpkkjbdchnaeikofponobhngc"
-							>
-								Learn Expert Extension
-							</a>
-						</li>
-						<li>
-							<a href="https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12">Better Snap Tool</a>{' '}
-							(Mac)
-						</li>
-						<li>
-							Snippet manager e.g. <a href="https://kapeli.com/dash">Dash</a> or{' '}
-							<a href="https://www.alfredapp.com/help/features/snippets/">Alfreds Snippets</a> (Mac)
-						</li>
-					</ul>
-					<li>How to best get to the solutions when helping a student, you can:</li>
-					<ul>
-						<li>Go to the solution branch</li>
-						<li>Go to pull requests to see other students solutions in one place</li>
-						<li>Have your labs on your machine and open them there</li>
-						<li>
-							Clone down students code (this allows you to{' '}
-							<a href="https://stackoverflow.com/questions/9834689/comparing-two-branches-in-git">
-								see a diff
-							</a>{' '}
-							with the solution branch)
-						</li>
-					</ul>
-				</ul>
-				<h5>We do not help students with their project in AAQ.</h5>
-				<p>
-					If a student needs help with their project even if its environment support please give them the
-					project support link and any additional resources that they need.
-					(https://project-support1.youcanbook.me/). Most students who are having GitHub, environment issues
-					in project mode is because their files are not set up correctly which can be solved by sending them
-					to the correct lesson that shows file structure and sharing the 1:1 support link.
-				</p>
+
+				<div className="card mb-3">
+					<div className="card-header">
+						<ul className="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+							<li className="nav-item">
+								<a
+									className="nav-link active"
+									id="tools-tab"
+									data-toggle="tab"
+									href="#tools"
+									role="tab"
+									aria-controls="tools"
+									aria-selected="true"
+								>
+									Tools
+								</a>
+							</li>
+							<li className="nav-item">
+								<a
+									className="nav-link"
+									id="solution-tab"
+									data-toggle="tab"
+									href="#solution"
+									role="tab"
+									aria-controls="solution"
+									aria-selected="false"
+								>
+									Geeting the Solution
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div className="tab-content " id="myTabContent">
+						<div
+							className="tab-pane fade show active card-body"
+							id="tools"
+							role="tabpanel"
+							aria-labelledby="tools-tab"
+						>
+							<p>Tool suggestions to make your shift smoother:</p>
+							<ul>
+								<li>
+									<a
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://chrome.google.com/webstore/detail/le3/hjjhpafjpkkjbdchnaeikofponobhngc"
+									>
+										Learn Expert Extension
+									</a>
+								</li>
+								<li>
+									<a href="https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12">
+										Better Snap Tool
+									</a>{' '}
+									(Mac)
+								</li>
+								<li>
+									Snippet manager e.g. <a href="https://kapeli.com/dash">Dash</a> or{' '}
+									<a href="https://www.alfredapp.com/help/features/snippets/">Alfreds Snippets</a> (Mac)
+								</li>
+							</ul>
+						</div>
+						<div
+							className="tab-pane fade card-body"
+							id="solution"
+							role="tabpanel"
+							aria-labelledby="solution-tab"
+						>
+							<p>How to best get to the solutions when helping a student, you can:</p>
+							<ul>
+								<li>Go to the solution branch</li>
+								<li>Go to pull requests to see other students solutions in one place</li>
+								<li>Have your labs on your machine and open them there</li>
+								<li>
+									Clone down students code (this allows you to{' '}
+									<a href="https://stackoverflow.com/questions/9834689/comparing-two-branches-in-git">
+										see a diff
+									</a>{' '}
+									with the solution branch)
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
 				<h2>Summer Schedule</h2>
 				<AaqSchedule />
