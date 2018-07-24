@@ -1,9 +1,9 @@
 import React from 'react';
 
 export const AaqSchedule = () => (
-	<div className="mb-3 table-wrapper">
+	<div className="mb-3">
 		<h4>Monday - Thursday</h4>
-		<table className="table table-bordered table-sm table-striped">
+		<table className="table table-responsive table-bordered table-sm table-striped">
 			<thead>
 				<tr>
 					<td>8AM</td>
@@ -175,88 +175,86 @@ export const AaqSchedule = () => (
 );
 
 export const StudyGroupSchedule = () => (
-	<div className="table-wrapper">
-		<table className="table table-bordered table-sm mb-3 table-striped">
-			<thead>
-				<tr>
-					<th>SUNDAY</th>
-					<th>MONDAY</th>
-					<th>TUESDAY</th>
-					<th>WEDNESDAY</th>
-					<th>THURSDAY</th>
-					<th>FRIDAY</th>
-					<th>SATURDAY</th>
-				</tr>
-			</thead>
+	<table className="table  table-responsive table-bordered table-sm mb-3 table-striped">
+		<thead>
+			<tr>
+				<th>SUNDAY</th>
+				<th>MONDAY</th>
+				<th>TUESDAY</th>
+				<th>WEDNESDAY</th>
+				<th>THURSDAY</th>
+				<th>FRIDAY</th>
+				<th>SATURDAY</th>
+			</tr>
+		</thead>
 
-			<tbody>
-				<tr>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-				</tr>
-				<tr>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-				</tr>
-				<tr>
-					<td>12PM - 1PM</td>
-					<td />
-					<td />
-					<td />
-					<td />
-					<td />
-					<td>12PM - 1PM</td>
-				</tr>
+		<tbody>
+			<tr>
+				<td>10AM - 11AM</td>
+				<td>10AM - 11AM</td>
+				<td>10AM - 11AM</td>
+				<td>10AM - 11AM</td>
+				<td>10AM - 11AM</td>
+				<td>10AM - 11AM</td>
+				<td>10AM - 11AM</td>
+			</tr>
+			<tr>
+				<td>11AM - 12PM</td>
+				<td>11AM - 12PM</td>
+				<td>11AM - 12PM</td>
+				<td>11AM - 12PM</td>
+				<td>11AM - 12PM</td>
+				<td>11AM - 12PM</td>
+				<td>11AM - 12PM</td>
+			</tr>
+			<tr>
+				<td>12PM - 1PM</td>
+				<td />
+				<td />
+				<td />
+				<td />
+				<td />
+				<td>12PM - 1PM</td>
+			</tr>
 
-				<tr>
-					<td />
-					<td>8PM - 9PM</td>
-					<td>8PM - 9PM</td>
-					<td>8PM - 9PM</td>
-					<td>8PM - 9PM</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<td />
-					<td>8PM - 9PM</td>
-					<td>8PM - 9PM</td>
-					<td>9PM - 10PM</td>
-					<td>8PM - 9PM</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<td />
-					<td>9PM - 10PM</td>
-					<td>9PM - 10PM</td>
-					<td />
-					<td>9PM - 10PM</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<td />
-					<td />
-					<td>9PM - 10PM</td>
-					<td />
-					<td>9PM - 10PM</td>
-					<td />
-					<td />
-				</tr>
-			</tbody>
-		</table>
-	</div>
+			<tr>
+				<td />
+				<td>8PM - 9PM</td>
+				<td>8PM - 9PM</td>
+				<td>8PM - 9PM</td>
+				<td>8PM - 9PM</td>
+				<td />
+				<td />
+			</tr>
+			<tr>
+				<td />
+				<td>8PM - 9PM</td>
+				<td>8PM - 9PM</td>
+				<td>9PM - 10PM</td>
+				<td>8PM - 9PM</td>
+				<td />
+				<td />
+			</tr>
+			<tr>
+				<td />
+				<td>9PM - 10PM</td>
+				<td>9PM - 10PM</td>
+				<td />
+				<td>9PM - 10PM</td>
+				<td />
+				<td />
+			</tr>
+			<tr>
+				<td />
+				<td />
+				<td>9PM - 10PM</td>
+				<td />
+				<td>9PM - 10PM</td>
+				<td />
+				<td />
+			</tr>
+		</tbody>
+	</table>
 );
 
 export const OneOnOneSchedule = () => (
