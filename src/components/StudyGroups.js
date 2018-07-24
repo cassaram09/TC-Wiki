@@ -3,7 +3,7 @@ import { FileText, YouTube } from './Svg';
 import { StudyGroupSchedule } from './SummerSchedule';
 
 const StudyGroups = ({ more = true }) => {
-	const ongoing = [
+	const general = [
 		{
 			title: 'Study Group Schedule',
 			href: 'https://docs.google.com/spreadsheets/d/1S72HyVSKgfymB1XAhO7eMr-HK2rJl8rbRWnbsfvCg7M',
@@ -59,9 +59,8 @@ const StudyGroups = ({ more = true }) => {
 			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 				<h1>Study Groups</h1>
 			</div>
-			<h2>Ongoing</h2>
 			<div className="list-group">
-				{ongoing.map((link, i) => (
+				{general.map((link, i) => (
 					<a
 						key={i}
 						target="_blank"

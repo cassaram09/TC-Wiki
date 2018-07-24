@@ -21,7 +21,7 @@ import Sidebar from './components/Sidebar';
 import OneOnOnes from './components/OneOnOnes';
 import CurriculumUpdates from './components/CurriculumUpdates';
 import VirtualBox from './components/VirtualBox';
-import OngoingInfo from './components/OngoingInfo';
+import GeneralInfo from './components/GeneralInfo';
 import JiraTickets from './components/JiraTickets';
 import CommonErrors from './components/CommonErrors';
 
@@ -46,7 +46,7 @@ ReactDOM.render(
 											<Route exact path="/aaq" component={Aaq} />
 											<Route exact path="/one-on-ones" component={OneOnOnes} />
 											<Route exact path="/curriculum-updates" component={CurriculumUpdates} />
-											<Route exact path="/shift-info" component={OngoingInfo} />
+											<Route exact path="/shift-info" component={GeneralInfo} />
 											<Route exact path="/virtual-box" component={VirtualBox} />
 											<Route exact path="/jira-tickets" component={JiraTickets} />
 											<Route exact path="/common-errors" component={CommonErrors} />
