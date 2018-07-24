@@ -17,7 +17,7 @@ const Sidebar = ({ user }) => {
 							</div>
 							<div className="col">
 								<h5 className="mb-0 profile-name">{user.displayName}</h5>
-								<small className="mb-0">Tech Coach Lead</small>
+								<small className="mb-0">Technical Coach</small>
 							</div>
 						</div>
 						<li className="nav-item">

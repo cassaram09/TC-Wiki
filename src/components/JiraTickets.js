@@ -46,7 +46,7 @@ const JiraTickets = () => {
 					>
 						<p>
 							While creating the Jira ticket if possible stay on with student to get all the neseccary info -
-							if not, don't <code>qbot done</code> the question until the Ticket is done (let the dispatcher
+							if not, don't <code>qbot done</code> the question until the ticket is done (let the dispatcher
 							know). To create a Jira ticket click the button at the bottom of any chat:
 						</p>
 						<img src="/log-bug-report.png" alt="" class="img-thumbnail mb-3" />
