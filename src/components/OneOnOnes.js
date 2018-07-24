@@ -1,13 +1,14 @@
 import React from 'react';
+import { OneOnOneSchedule } from './SummerSchedule';
 
-const OneOnOnes = () => {
+const OneOnOnes = ({ more = true }) => {
 	return (
 		<div>
 			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 				<h1>1:1s</h1>
 			</div>
 
-			<div className="list-group">
+			<div className="list-group mb-3">
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
@@ -29,6 +30,12 @@ const OneOnOnes = () => {
 					</div>
 				</a>
 			</div>
+			{more && (
+				<React.Fragment>
+					<h2>Summer Schedule</h2>
+					<OneOnOneSchedule />
+				</React.Fragment>
+			)}
 		</div>
 	);
 };

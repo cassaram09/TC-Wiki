@@ -1,6 +1,7 @@
 import React from 'react';
+import { AaqSchedule } from './SummerSchedule';
 
-const Aaq = () => (
+const Aaq = ({ more = true }) => (
 	<div>
 		<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 			<h1>AAQ</h1>
@@ -202,42 +203,58 @@ const Aaq = () => (
 				</div>
 			</div>
 		</div>
+		{more && (
+			<React.Fragment>
+				<h2>Tips</h2>
+				<ul>
+					<li>Watch Slack & AAQ</li>
+					<li>Tools to consider:</li>
+					<ul>
+						<li>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://chrome.google.com/webstore/detail/le3/hjjhpafjpkkjbdchnaeikofponobhngc"
+							>
+								Learn Expert Extension
+							</a>
+						</li>
+						<li>
+							<a href="https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12">Better Snap Tool</a>{' '}
+							(Mac)
+						</li>
+						<li>
+							Snippet manager e.g. <a href="https://kapeli.com/dash">Dash</a> or{' '}
+							<a href="https://www.alfredapp.com/help/features/snippets/">Alfreds Snippets</a> (Mac)
+						</li>
+					</ul>
+					<li>How to best get to the solutions when helping a student, you can:</li>
+					<ul>
+						<li>Go to the solution branch</li>
+						<li>Go to pull requests to see other students solutions in one place</li>
+						<li>Have your labs on your machine and open them there</li>
+						<li>
+							Clone down students code (this allows you to{' '}
+							<a href="https://stackoverflow.com/questions/9834689/comparing-two-branches-in-git">
+								see a diff
+							</a>{' '}
+							with the solution branch)
+						</li>
+					</ul>
+				</ul>
+				<h5>We do not help students with their project in AAQ.</h5>
+				<p>
+					If a student needs help with their project even if its environment support please give them the
+					project support link and any additional resources that they need.
+					(https://project-support1.youcanbook.me/). Most students who are having GitHub, environment issues
+					in project mode is because their files are not set up correctly which can be solved by sending them
+					to the correct lesson that shows file structure and sharing the 1:1 support link.
+				</p>
 
-		<h2>Tips</h2>
-		<ul>
-			<li>Watch Slack & AAQ</li>
-			<li>Tools to consider:</li>
-			<ul>
-				<li>
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="https://chrome.google.com/webstore/detail/le3/hjjhpafjpkkjbdchnaeikofponobhngc"
-					>
-						Learn Expert Extension
-					</a>
-				</li>
-				<li>
-					<a href="https://itunes.apple.com/us/app/bettersnaptool/id417375580?mt=12">Better Snap Tool</a>{' '}
-					(Mac)
-				</li>
-				<li>
-					Snippet manager e.g. <a href="https://kapeli.com/dash">Dash</a> or{' '}
-					<a href="https://www.alfredapp.com/help/features/snippets/">Alfreds Snippets</a> (Mac)
-				</li>
-			</ul>
-			<li>How to best get to the solutions when helping a student, you can:</li>
-			<ul>
-				<li>Go to the solution branch</li>
-				<li>Go to pull requests to see other students solutions in one place</li>
-				<li>Have your labs on your machine and open them there</li>
-				<li>
-					Clone down students code (this allows you to{' '}
-					<a href="https://stackoverflow.com/questions/9834689/comparing-two-branches-in-git">see a diff</a>{' '}
-					with the solution branch)
-				</li>
-			</ul>
-		</ul>
+				<h2>Summer Schedule</h2>
+				<AaqSchedule />
+			</React.Fragment>
+		)}
 	</div>
 );
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import { FileText, YouTube } from './Svg';
+import { StudyGroupSchedule } from './SummerSchedule';
 
-const StudyGroups = () => {
+const StudyGroups = ({ more = true }) => {
 	const ongoing = [
 		{
 			title: 'Study Group Schedule',
@@ -78,25 +79,31 @@ const StudyGroups = () => {
 				))}
 			</div>
 			<br />
-			<h2>Training</h2>
-			<div className="list-group">
-				{training.map((link, i) => (
-					<a
-						key={i}
-						target="_blank"
-						rel="noopener noreferrer"
-						href={link.href}
-						className="list-group-item list-group-item-action flex-column align-items-start "
-					>
-						<div className="d-flex w-100 justify-content-between">
-							<h5 className="mb-1">{link.title}</h5>
-							{link.upperRight ? svg(link.upperRight) : null}
-						</div>
-						{link.description ? <p className="mb-1">{link.description}</p> : null}
-						{link.smallText ? <small>{link.smallText}</small> : null}
-					</a>
-				))}
-			</div>
+			{more && (
+				<React.Fragment>
+					<h2>Training</h2>
+					<div className="list-group mb-3">
+						{training.map((link, i) => (
+							<a
+								key={i}
+								target="_blank"
+								rel="noopener noreferrer"
+								href={link.href}
+								className="list-group-item list-group-item-action flex-column align-items-start "
+							>
+								<div className="d-flex w-100 justify-content-between">
+									<h5 className="mb-1">{link.title}</h5>
+									{link.upperRight ? svg(link.upperRight) : null}
+								</div>
+								{link.description ? <p className="mb-1">{link.description}</p> : null}
+								{link.smallText ? <small>{link.smallText}</small> : null}
+							</a>
+						))}
+					</div>
+					<h2>Summer Schedule</h2>
+					<StudyGroupSchedule />
+				</React.Fragment>
+			)}
 		</div>
 	);
 };
