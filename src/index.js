@@ -24,6 +24,7 @@ import VirtualBox from './components/VirtualBox';
 import GeneralInfo from './components/GeneralInfo';
 import JiraTickets from './components/JiraTickets';
 import CommonErrors from './components/CommonErrors';
+import Learning from './components/Learning';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
@@ -50,6 +51,7 @@ ReactDOM.render(
 											<Route exact path="/virtual-box" component={VirtualBox} />
 											<Route exact path="/jira-tickets" component={JiraTickets} />
 											<Route exact path="/common-errors" component={CommonErrors} />
+											<Route exact path="/learning" component={Learning} />
 										</Switch>
 									</main>
 								</div>

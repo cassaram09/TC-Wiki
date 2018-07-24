@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import { Book, Users, File, Info, Box, Code, Rss, Flag } from './Svg';
+import { Book, Users, File, Info, Box, Code, Rss, Flag, BookOpen } from './Svg';
 
 const Sidebar = ({ user }) => {
 	return (
@@ -26,6 +26,12 @@ const Sidebar = ({ user }) => {
 						<li className="nav-item">
 							<NavLink exact to="/" className="nav-link home-sidebar-link" title="Home">
 								<span className="feather logo-home">//</span> <span className="d-none d-md-inline">Home</span>
+							</NavLink>
+						</li>
+						<li className="nav-item">
+							<NavLink exact to="/general-info" className="nav-link pl-0" title="General Info">
+								<Info />
+								<span className="d-none d-md-inline">General Info</span>
 							</NavLink>
 						</li>
 						<li className="nav-item">
@@ -54,12 +60,6 @@ const Sidebar = ({ user }) => {
 							<span>Other Resources</span>
 						</h6>
 						<li className="nav-item">
-							<NavLink exact to="/general-info" className="nav-link pl-0" title="General Info">
-								<Info />
-								<span className="d-none d-md-inline">General Info</span>
-							</NavLink>
-						</li>
-						<li className="nav-item">
 							<NavLink exact to="/virtual-box" className="nav-link pl-0" title="Virtual Box">
 								<Box />
 								<span className="d-none d-md-inline">Virtual Box</span>
@@ -81,6 +81,12 @@ const Sidebar = ({ user }) => {
 							<NavLink exact to="/common-errors" className="nav-link pl-0" title="Common Errors">
 								<Flag />
 								<span className="d-none d-md-inline">Common Errors</span>
+							</NavLink>
+						</li>
+						<li className="nav-item">
+							<NavLink exact to="/learning" className="nav-link pl-0" title="Learning">
+								<BookOpen />
+								<span className="d-none d-md-inline">Learning</span>
 							</NavLink>
 						</li>
 					</ul>
