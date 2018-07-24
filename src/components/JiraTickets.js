@@ -96,26 +96,26 @@ const JiraTickets = () => {
 				<table className="table table-bordered table-sm mb-3">
 					<thead>
 						<tr>
-							<td>
+							<th scope="col">
 								<b>Prority Level</b>
-							</td>
-							<td>
+							</th>
+							<th scope="col">
 								<b>Definition</b>
-							</td>
-							<td>
+							</th>
+							<th scope="col">
 								<b>Expected turn around (internal deadline)</b>
-							</td>
-							<td>
+							</th>
+							<th scope="col">
 								<b>Process</b>
-							</td>
-							<td>
+							</th>
+							<th scope="col">
 								<b>Examples</b>
-							</td>
+							</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="table-danger">
-							<td>Blocker</td>
+							<th scope="row">Blocker</th>
 							<td>
 								- A paying student is running into a blocking issue that does not let them proceed.
 								<br />- A user is trying to sign up for paid content but cannot
@@ -154,7 +154,7 @@ const JiraTickets = () => {
 							</td>
 						</tr>
 						<tr class="table-warning">
-							<td>High</td>
+							<th scope="row">High</th>
 							<td align="left">
 								- A non-paying student is running into a blocking issue that does not let them proceed.
 								<br />- Any student is running into an issue that is causing them to have a poor product
@@ -186,7 +186,7 @@ const JiraTickets = () => {
 							</td>
 						</tr>
 						<tr class="table-success">
-							<td>Medium</td>
+							<th scope="row">Medium</th>
 							<td align="left">
 								- An issue that needs to be addressed but does not need to be fixed for a couple of business
 								days. It's an issue, but not creating a poor user experience every time they do something on
@@ -216,7 +216,7 @@ const JiraTickets = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>Low</td>
+							<th scope="row">Low</th>
 							<td>
 								- An issue that would be nice to fix, but can be addressed down the road during a clean up
 								week.

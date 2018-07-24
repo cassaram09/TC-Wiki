@@ -8,7 +8,7 @@ const GeneralInfo = ({ more = true }) => (
 		<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 			<h1>General Info</h1>
 		</div>
-		<QuickLinks />
+		{more && <QuickLinks />}
 		<TeamInfo />
 		{more && (
 			<React.Fragment>
@@ -25,9 +25,16 @@ const GeneralInfo = ({ more = true }) => (
 				</div>
 				<h3>Hours, Breaks, Meetings, and Holidays</h3>
 				<ul>
-					<li>You need to submit your hours every week before EOD Saturday, if you don't manage to do so you need to message Ruth.</li>
-					<li><a href="#">How to submit hours</a></li>
-					<li><a href="#">How to drop/swap shifts</a></li>
+					<li>
+						You need to submit your hours every week before EOD Saturday, if you don't manage to do so you
+						need to message Ruth.
+					</li>
+					<li>
+						<a href="#">How to submit hours</a>
+					</li>
+					<li>
+						<a href="#">How to drop/swap shifts</a>
+					</li>
 					<li>There will be no shifts on WeWork Holidays!</li>
 					<li>Breaks</li>
 					<ul>
@@ -42,9 +49,6 @@ const GeneralInfo = ({ more = true }) => (
 					</ul>
 				</ul>
 
-				<a href="https://docs.google.com/presentation/d/10WuZTplcXRMmMHFhZ1dFYTKp2_cg893VNukQ5LyFAGo/edit#slide=id.g3816fe66c8_0_40">
-					tc debuging framework
-				</a>
 				<h2>Summer Schedule (All times are in ET)</h2>
 				<h3>AAQ</h3>
 				<AaqSchedule />
