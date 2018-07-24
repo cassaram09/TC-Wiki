@@ -177,7 +177,19 @@ const Aaq = ({ more = true }) => (
 					role="tabpanel"
 					aria-labelledby="expertChatDown-tab"
 				>
-					Send an @here message in student slack and tell students that they should ask questions there
+					<p>
+						Send an <code>@here</code> message in the{' '}
+						<a target="_blank" rel="noopener noreferrer" href="https://learn-co.slack.com/messages/G0B6FET6G">
+							Online Web Developer Channel
+						</a>{' '}
+						in the student slack (learn.co) to tell students that they should ask questions in Slack until the chat is back up.
+					</p>
+					<p>
+						Example:{' '}
+						<code>
+							@here expert chat is down at the moment, in the meantime please send us your questions here.
+						</code>
+					</p>
 				</div>
 				<div
 					className="tab-pane fade card-body"
@@ -185,7 +197,10 @@ const Aaq = ({ more = true }) => (
 					role="tabpanel"
 					aria-labelledby="slackDown-tab"
 				>
-					Create a group google hangout as a replacement
+					Start a group{' '}
+					<a href="https://support.google.com/hangouts/answer/3111943?hl=en&co=GENIE.Platform%3DDesktop">
+						Google Hangout group chat
+					</a>.
 				</div>
 
 				<div
@@ -194,7 +209,8 @@ const Aaq = ({ more = true }) => (
 					role="tabpanel"
 					aria-labelledby="rudeStudent-tab"
 				>
-					Add a note to a student (at the bottom of chat)
+					Add a note to the students profile (at the bottom of chat):
+					<img src="/leave-note.png" alt="" class="img-thumbnail mt-3" />
 				</div>
 				<div className="tab-pane fade card-body" id="slowDay" role="tabpanel" aria-labelledby="slowDay-tab">
 					<ul>
