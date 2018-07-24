@@ -54,7 +54,7 @@ const Sidebar = ({ user }) => {
 							<span>Other Resources</span>
 						</h6>
 						<li className="nav-item">
-							<NavLink exact to="/shift-info" className="nav-link pl-0" title="General Info">
+							<NavLink exact to="/general-info" className="nav-link pl-0" title="General Info">
 								<Info />
 								<span className="d-none d-md-inline">General Info</span>
 							</NavLink>

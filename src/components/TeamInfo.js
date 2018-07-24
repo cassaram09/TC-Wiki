@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TeamInfo = () => (
-	<div className="row">
+	<div className="row mb-3">
 		<div className="col-lg-4">
 			<h3>TC Teams</h3>
 			<div className="table-responsive">

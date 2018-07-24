@@ -46,7 +46,7 @@ ReactDOM.render(
 											<Route exact path="/aaq" component={Aaq} />
 											<Route exact path="/one-on-ones" component={OneOnOnes} />
 											<Route exact path="/curriculum-updates" component={CurriculumUpdates} />
-											<Route exact path="/shift-info" component={GeneralInfo} />
+											<Route exact path="/general-info" component={GeneralInfo} />
 											<Route exact path="/virtual-box" component={VirtualBox} />
 											<Route exact path="/jira-tickets" component={JiraTickets} />
 											<Route exact path="/common-errors" component={CommonErrors} />
