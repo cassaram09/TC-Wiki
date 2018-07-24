@@ -13,6 +13,7 @@ a {
 }
 
 /* Headlines */
+
 h1,
 .h1 {
     font-size: 2.25rem;
@@ -44,6 +45,7 @@ h6,
 }
 
 /* Sidebar */
+
 .sidebar {
     top: 0;
     bottom: 0;
@@ -96,6 +98,7 @@ h6,
 }
 
 /* Content */
+
 [role="main"] {
     padding-top: 3rem;
 }
@@ -158,11 +161,46 @@ h6,
     top: 2px;
 }
 
-.table-wrapper {
-    overflow: auto;
+/* Table */
+
+.table-5 {
+    width: 5%;
+}
+
+.table-8 {
+    width: 8%;
+}
+
+.table-10 {
+    width: 10%;
+}
+
+.table-15 {
+    width: 15%;
+}
+
+.table-18 {
+    width: 18%;
+}
+
+.table-20 {
+    width: 20%;
+}
+
+.table-25 {
+    width: 25%;
+}
+
+.table-30 {
+    width: 30%;
+}
+
+.jira-table ul {
+    padding-left: 1.5rem;
 }
 
 /* Navbar */
+
 .navbar-brand {
     padding-top: .45rem;
     padding-bottom: .45rem;
@@ -190,6 +228,7 @@ h6,
 }
 
 /* Utilities */
+
 .border-top {
     border-top: 1px solid #fff;
 }
@@ -222,6 +261,7 @@ h6,
 }
 
 /* Timeline */
+
 .updates-container {
     background-color: #f8f9fa;
 }
@@ -272,6 +312,7 @@ ul.timeline h5 {
 }
 
 /* Media Queries */
+
 @media (min-width: 768px) {
     .sidebar {
         min-height: 100vh;

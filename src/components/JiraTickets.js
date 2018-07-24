@@ -45,11 +45,12 @@ const JiraTickets = () => {
 						aria-labelledby="createTicket-tab"
 					>
 						<p>
-							While creating the Jira ticket if possible stay on with student to get all the neseccary info - if
-							not, don't <code>qbot done</code> the question until the Ticket is done (let the dispatcher
+							While creating the Jira ticket if possible stay on with student to get all the neseccary info -
+							if not, don't <code>qbot done</code> the question until the Ticket is done (let the dispatcher
 							know). To create a Jira ticket click the button at the bottom of any chat:
 						</p>
-						<img src="/log-bug-report.png" alt="" class="img-thumbnail mb-3" /><br/>
+						<img src="/log-bug-report.png" alt="" class="img-thumbnail mb-3" />
+						<br />
 
 						<div className="btn-group">
 							<a
@@ -79,7 +80,7 @@ const JiraTickets = () => {
 				</div>
 			</div>
 
-			<div className="table-wrapper">
+			<div className="table-responsive jira-table">
 				<div className="d-flex justify-content-between align-items-end">
 					<h2>Jira Issue Priority Definitions</h2>
 					<small>
@@ -96,152 +97,194 @@ const JiraTickets = () => {
 				<table className="table table-bordered table-sm mb-3">
 					<thead>
 						<tr>
-							<th scope="col">
-								<b>Prority Level</b>
+							<th scope="col" className="table-5">
+								Prority Level
 							</th>
-							<th scope="col">
-								<b>Definition</b>
+							<th scope="col" className="table-18">
+								Definition
 							</th>
-							<th scope="col">
-								<b>Expected turn around (internal deadline)</b>
+							<th scope="col" className="table-8">
+								Expected turnaround <small>(internal DL)</small>
 							</th>
-							<th scope="col">
-								<b>Process</b>
+							<th scope="col" className="table-30">
+								Process
 							</th>
-							<th scope="col">
-								<b>Examples</b>
-							</th>
+							<th scope="col">Examples</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="table-danger">
 							<th scope="row">Blocker</th>
 							<td>
-								- A paying student is running into a blocking issue that does not let them proceed.
-								<br />- A user is trying to sign up for paid content but cannot
-								<br />- Admin issues (major site-wide blocking issues for everyone)
-								<br />- 4 or more free users have reported the same issue over the course of 1-2 shifts
+								<ul>
+									<li>A paying student is running into a blocking issue that does not let them proceed.</li>
+									<li>A user is trying to sign up for paid content but cannot</li>
+									<li>Admin issues (major site-wide blocking issues for everyone)</li>
+									<li>4 or more free users have reported the same issue over the course of 1-2 shifts</li>
+								</ul>
 							</td>
 							<td>Immediate</td>
-							<td align="left">
-								Create Jira issue and mark it as Blocker, Jira integration drops it into #Escalation in Slack,
-								@here the channel to draw attention to the issue.
-								<br />
-								<br />Tell the student:
-								<br />
-								<br />&quot;I've notified the team here about this issue and they will get back to you as soon
-								as possible&quot;
-								<br />
-								<br />Leave the question open so that if the dev team responds immediately, you can keep
-								working with the student.
+							<td>
+								<ul>
+									<li>
+										Create Jira issue and mark it as Blocker, Jira integration drops it into #Escalation in
+										Slack, @here the channel to draw attention to the issue.
+									</li>
+									<li>
+										Tell the student:{' '}
+										<code>
+											I've notified the team here about this issue and they will get back to you as soon as
+											possible
+										</code>
+									</li>
+									<li>
+										Leave the question open so that if the dev team responds immediately, you can keep working
+										with the student.
+									</li>
+								</ul>
 							</td>
-							<td align="left">
-								PAID
-								<br />- Paid user IDE not working
-								<br />- Paid user account 500ing / 404 (their course pages, NOT their profile page)
-								<br />- Unable to complete any lessons
-								<br />- Can't access their track
-								<br />- Can't access billing
-								<br />- Learn is down
-								<br />
-								<br />FREE
-								<br />- cannot enroll in a paying course
-								<br />
-								<br />ADMIN
-								<br />- /expert-chat is empty/broken
-								<br />- overall the Learn IDE is broken
-								<br />- all of Learn.co is down
+							<td>
+								<h6>PAID</h6>
+								<ul>
+									<li>Paid user IDE not working</li>
+									<li>Paid user account 500ing / 404 (their course pages, NOT their profile page)</li>
+									<li>Unable to complete any lessons</li>
+									<li>Can't access their track</li>
+									<li>Can't access billing</li>
+									<li>Learn is down</li>
+								</ul>
+								<h6>FREE</h6>
+								<ul>
+									<li>cannot enroll in a paying course</li>
+								</ul>
+								<h6>ADMIN</h6>
+								<ul>
+									<li>/expert-chat is empty/broken</li>
+									<li>overall the Learn IDE is broken</li>
+									<li>all of Learn.co is down</li>
+								</ul>
 							</td>
 						</tr>
 						<tr class="table-warning">
 							<th scope="row">High</th>
-							<td align="left">
-								- A non-paying student is running into a blocking issue that does not let them proceed.
-								<br />- Any student is running into an issue that is causing them to have a poor product
-								experience, but it is not blocking them.
+							<td>
+								<ul>
+									<li>
+										A non-paying student is running into a blocking issue that does not let them proceed.
+									</li>
+									<li>
+										Any student is running into an issue that is causing them to have a poor product
+										experience, but it is not blocking them.
+									</li>
+								</ul>
 							</td>
-							<td align="left">24 hours or so</td>
-							<td align="left">
-								Create Jira issue and mark it as High. Tech Support will take it from here.
-								<br />
-								<br />Tell the student:
-								<br />
-								<br />&quot;I have let our team here know about the issue and they'll be working on this
-								within the next business day. Someone will reach out to you if more action is required on your
-								end. That being the case, is it alright if we mark this resolved for now?&quot;
+							<td>24 hours or so</td>
+							<td>
+								<ul>
+									<li>Create Jira issue and mark it as High. Tech Support will take it from here.</li>
+									<li>
+										Tell the student:{' '}
+										<code>
+											I have let our team here know about the issue and they'll be working on this within the
+											next business day. Someone will reach out to you if more action is required on your end.
+											That being the case, is it alright if we mark this resolved for now?
+										</code>
+									</li>
+								</ul>
 							</td>
-							<td align="left">
-								PAID
-								<br />- Paying user has issues with (assessments, blog, neighbors, study group, etc)
-								<br />- Chat issues
-								<br />- None of the student's lights are flipping (but user can proceed)
-								<br />
-								<br />FREE
-								<br />- Free user's IDE not working
-								<br />- Free user can't access a free track
-								<br />- Free user is getting 500 / 404
-								<br />- Chat issues
-								<br />
-								<br />
+							<td>
+								<h6>PAID</h6>
+								<ul>
+									<li>Paying user has issues with (assessments, blog, neighbors, study group, etc)</li>
+									<li>Chat issues</li>
+									<li>None of the student's lights are flipping (but user can proceed)</li>
+								</ul>
+
+								<h6>FREE</h6>
+								<ul>
+									<li>Free user's IDE not working</li>
+									<li>Free user can't access a free track</li>
+									<li>Free user is getting 500 / 404</li>
+									<li>Chat issues</li>
+								</ul>
 							</td>
 						</tr>
 						<tr class="table-success">
 							<th scope="row">Medium</th>
-							<td align="left">
-								- An issue that needs to be addressed but does not need to be fixed for a couple of business
-								days. It's an issue, but not creating a poor user experience every time they do something on
-								Learn.
+							<td>
+								<ul>
+									<li>
+										An issue that needs to be addressed but does not need to be fixed for a couple of business
+										days. It's an issue, but not creating a poor user experience every time they do something
+										on Learn.
+									</li>
+								</ul>
 							</td>
-							<td align="left">A couple of days</td>
-							<td align="left">
-								Create Jira issue and mark it as Medium. Tech Support will take it from there.
-								<br />
-								<br />Tell the student:
-								<br />
-								<br />&quot;I have let our team here know about the issue and they'll be working on this
-								within the next couple of business days. Someone will reach out to you if more action is
-								required on your end. That being the case, is it alright if we mark this resolved for
-								now?&quot;
+							<td>A couple of days</td>
+							<td>
+								<ul>
+									<li>Create Jira issue and mark it as Medium. Tech Support will take it from there.</li>
+									<li>
+										Tell the student:{' '}
+										<code>
+											I have let our team here know about the issue and they'll be working on this within the
+											next couple of business days. Someone will reach out to you if more action is required
+											on your end. That being the case, is it alright if we mark this resolved for now?
+										</code>
+									</li>
+								</ul>
+
 								<br />
 							</td>
 							<td>
-								PAID
-								<br />- Slack invitation issues
-								<br />- Progress/completion data on Learn is incorrect (home page)
-								<br />- Switching blog type
-								<br />
-								<br />FREE
-								<br />- None of the student's lights are responding (but user can proceed)
-								<br />
+								<h6>PAID</h6>
+								<ul>
+									<li>Slack invitation issues</li>
+									<li>Progress/completion data on Learn is incorrect (home page)</li>
+									<li>Switching blog type</li>
+								</ul>
+								<h6>FREE</h6>
+								<ul>
+									<li>None of the student's lights are responding (but user can proceed)</li>
+								</ul>
 							</td>
 						</tr>
 						<tr>
 							<th scope="row">Low</th>
 							<td>
-								- An issue that would be nice to fix, but can be addressed down the road during a clean up
-								week.
+								<ul>
+									<li>
+										An issue that would be nice to fix, but can be addressed down the road during a clean up
+										week.
+									</li>
+								</ul>
 							</td>
 							<td>When we get around to it</td>
 							<td>
-								Create Jira issue and mark it as Low. Tech Support will take it from there.
-								<br />
-								<br />Tell the student:
-								<br />
-								<br />&quot;I have let our team here know about the issue and they'll get to this when they
-								have a chance. Someone will reach out to you if more action is required on your end. That
-								being the case, is it alright if we mark this resolved for now?&quot;
-								<br />
+								<ul>
+									<li>Create Jira issue and mark it as Low. Tech Support will take it from there.</li>
+									<li>
+										Tell the student:{' '}
+										<code>
+											I have let our team here know about the issue and they'll get to this when they have a
+											chance. Someone will reach out to you if more action is required on your end. That being
+											the case, is it alright if we mark this resolved for now?
+										</code>
+									</li>
+								</ul>
 							</td>
 							<td>
-								GENERAL ISSUES
-								<br />- Visual quirks, such as misspelling, text overlapping
-								<br />- Feature requests or improvements
-								<br />- The occasional light isn't flipping
-								<br />
-								<br />FREE
-								<br />- Slack invitation issues
-								<br />- Progress/completion data on Learn is incorrect (home page)
-								<br />
+								<h6>GENERAL ISSUES</h6>
+								<ul>
+									<li>Visual quirks, such as misspelling, text overlapping</li>
+									<li>Feature requests or improvements</li>
+									<li>The occasional light isn't flipping</li>
+								</ul>
+								<h6>FREE</h6>
+								<ul>
+									<li>Slack invitation issues</li>
+									<li>Progress/completion data on Learn is incorrect (home page)</li>
+								</ul>
 							</td>
 						</tr>
 					</tbody>
