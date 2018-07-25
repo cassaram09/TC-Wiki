@@ -7,29 +7,34 @@ const Aaq = ({ more = true }) => {
 		{
 			title: 'After Chat',
 			tag: 'chat',
-			body: `Great job! You've got this! Also don't forget to resolve the question, we'd love to get feedback from you!`
+			body: `Great job! You've got this! Also don't forget to resolve the question, we'd love to get feedback from you!`,
+			copy: true
 		},
 		{
 			title: '8h',
 			tag: 'eightHours',
 			body:
-				"Hi there! We noticed that you haven't touched this question in the last 8 hours so we're going to mark it as resolved for now. Please feel free to ask another question if you get stuck!"
+				"Hi there! We noticed that you haven't touched this question in the last 8 hours so we're going to mark it as resolved for now. Please feel free to ask another question if you get stuck!",
+			copy: true
 		},
 		{
 			title: "TC's are Back",
 			tag: 'tcsBack',
-			body: 'Tech Coaches are back for the day, let us know if you still need help with this.'
+			body: 'Tech Coaches are back for the day, let us know if you still need help with this.',
+			copy: true
 		},
 		{
 			title: 'More Help',
 			tag: 'moreHelp',
-			body: 'Hi! Do you still need help with this?'
+			body: 'Hi! Do you still need help with this?',
+			copy: true
 		},
 		{
 			title: 'Resolve',
 			tag: 'resolve',
 			body:
-				"Thanks for using AAQ, based on the message I am assuming we can close this question. If you need any more help please don't hesitate to ask!"
+				"Thanks for using AAQ, based on the message I am assuming we can close this question. If you need any more help please don't hesitate to ask!",
+			copy: true
 		}
 	];
 

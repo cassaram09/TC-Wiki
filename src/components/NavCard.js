@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { Copy } from './Svg';
 
 const NavCard = ({ snippets }) => (
 	<div className="card mb-3">
@@ -31,7 +33,16 @@ const NavCard = ({ snippets }) => (
 					role="tabpanel"
 					aria-labelledby={`${snippet.tag}-tab`}
 				>
-					{ReactHtmlParser(snippet.body)}
+					<div className="d-flex justify-content-between align-items-start">
+						<span>{ReactHtmlParser(snippet.body)}</span>
+						{snippet.copy && (
+							<CopyToClipboard text={snippet.body}>
+								<button className="btn btn-outline-secondary btn-sm ml-2">
+									<Copy />
+								</button>
+							</CopyToClipboard>
+						)}
+					</div>
 				</div>
 			))}
 		</div>
