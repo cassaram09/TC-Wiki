@@ -121,6 +121,10 @@ h6,
     margin-bottom: .5rem;
 }
 
+.curriculum-update-button:hover {
+    color: #32cefe;
+}
+
 .profile-text {
     margin-top: 5px;
     height: 50px;
@@ -163,6 +167,20 @@ h6,
 .login button:hover {
     box-shadow: 0 4px #2dbbe6;
     top: 2px;
+}
+
+.arrow-up {
+    padding: 0 5px 0 3px;
+}
+
+.arrow-up svg {
+    color: #2dbbe6;
+    height: 22px;
+    width: 22px;
+}
+
+.press-button-text {
+    float: right;
 }
 
 /* Table */

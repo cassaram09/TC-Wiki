@@ -154,3 +154,11 @@ export const BookOpen = () =>
 			<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
 		</React.Fragment>
 	);
+
+export const ArrowUp = () =>
+	svgBase(
+		<React.Fragment>
+			<line x1="12" y1="19" x2="12" y2="5" />
+			<polyline points="5 12 12 5 19 12" />
+		</React.Fragment>
+	);

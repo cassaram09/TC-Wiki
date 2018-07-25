@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Github } from './Svg';
+import { Github, ArrowUp } from './Svg';
 import ReactLoading from 'react-loading';
 
 class CurriculumUpdates extends Component {
@@ -81,7 +81,14 @@ class CurriculumUpdates extends Component {
 						<Github />
 					</button>
 				</div>
-
+				{this.state.updates.length === 0 && (
+					<p className="text-muted press-button-text">
+						To get updates press the button{' '}
+						<span className="arrow-up">
+							<ArrowUp />
+						</span>
+					</p>
+				)}
 				{!this.state.loading ? (
 					<ul className={this.state.updates.length !== 0 ? 'timeline' : ''}>
 						{this.state.updates
