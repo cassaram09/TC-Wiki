@@ -56,7 +56,7 @@ const StudyGroups = ({ more = true }) => {
 
 	return (
 		<div>
-			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
 				<h1>Study Groups</h1>
 			</div>
 			<div className="list-group">
@@ -80,8 +80,8 @@ const StudyGroups = ({ more = true }) => {
 			<br />
 			{more && (
 				<React.Fragment>
-					<h2>Training</h2>
-					<div className="list-group mb-3">
+					<h3>Training</h3>
+					<div className="list-group mb-4">
 						{training.map((link, i) => (
 							<a
 								key={i}

@@ -4,7 +4,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Copy } from './Svg';
 
 const NavCard = ({ snippets }) => (
-	<div className="card mb-3">
+	<div className="card mb-4">
 		<div className="card-header">
 			<ul className="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
 				{snippets.map((snippet, i) => (

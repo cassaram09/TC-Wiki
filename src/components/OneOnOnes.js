@@ -4,11 +4,11 @@ import { OneOnOneSchedule } from './SummerSchedule';
 const OneOnOnes = ({ more = true }) => {
 	return (
 		<div>
-			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
 				<h1>1:1s</h1>
 			</div>
 
-			<div className="list-group mb-3">
+			<div className="list-group mb-4">
 				<a
 					target="_blank"
 					rel="noopener noreferrer"

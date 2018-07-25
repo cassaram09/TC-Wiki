@@ -12,7 +12,7 @@ const SearchResults = ({ repos, clearResults, loading, matchFound }) => {
 			return <ReactLoading type="bubbles" color="#32cefe" height={64} width={64} className="loading-repos" />;
 		} else if (repos.length !== 0) {
 			return (
-				<div className="list-group mb-3">
+				<div className="list-group mb-4">
 					<div className="d-flex justify-content-between align-items-end">
 						<button onClick={clearResults} className="btn btn-outline-secondary btn-sm mb-2 w-25">
 							Clear Results
@@ -57,7 +57,7 @@ const SearchResults = ({ repos, clearResults, loading, matchFound }) => {
 				</div>
 			);
 		} else if (matchFound !== '') {
-			return <h5 className="text-danger mb-3">No Match Found for: <strong>{matchFound}</strong></h5>;
+			return <h5 className="text-danger mb-4">No Match Found for: <strong>{matchFound}</strong></h5>;
 		} else {
 			return <div />;
 		}

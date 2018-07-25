@@ -11,7 +11,7 @@ const Sidebar = ({ user }) => {
 			<nav className="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
 				<div className="collapse navbar-collapse w-100">
 					<ul className="flex-md-column flex-row navbar-nav w-100 justify-content-between">
-						<div className="d-none d-md-flex row border-bottom align-items-center flex-wrap flex-md-nowrap pt-0 pb-2 mb-3 border-bottom">
+						<div className="d-none d-md-flex row border-bottom align-items-center flex-wrap flex-md-nowrap pt-0 pb-2 mb-4 border-bottom">
 							<div className="col-auto pr-0">
 								<img className="profile-img" src={user.photoURL} alt="" />
 							</div>

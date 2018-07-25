@@ -11,7 +11,7 @@ const JiraTickets = () => {
 			if not, don't <code>qbot done</code> the question until the ticket is done (let the dispatcher
 			know). To create a Jira ticket click the button at the bottom of any chat:
 		</p>
-		<img src="/log-bug-report.png" alt="" class="img-thumbnail mb-3" />
+		<img src="/log-bug-report.png" alt="" class="img-thumbnail mb-4" />
 		<br />
 
 		<div class="btn-group">
@@ -45,7 +45,7 @@ const JiraTickets = () => {
 
 	return (
 		<div>
-			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
 				<h1>Jira Tickets</h1>
 			</div>
 		
@@ -53,7 +53,7 @@ const JiraTickets = () => {
 
 			<div className="table-responsive jira-table">
 				<div className="d-flex justify-content-between align-items-end">
-					<h2>Jira Issue Priority Definitions</h2>
+					<h3>Jira Issue Priority Definitions</h3>
 					<small>
 						<a
 							target="_blank"
@@ -65,7 +65,7 @@ const JiraTickets = () => {
 					</small>
 				</div>
 
-				<table className="table table-bordered table-sm mb-3">
+				<table className="table table-bordered table-sm mb-4">
 					<thead>
 						<tr>
 							<th scope="col" className="table-5">

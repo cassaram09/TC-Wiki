@@ -3,7 +3,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const CommonErrors = () => (
 	<div>
-		<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+		<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
 			<h1>Common Errors</h1>
 		</div>
 		<h2>Ruby</h2>
@@ -44,7 +44,7 @@ const CommonErrors = () => (
 				</div>
 			</div>
 		</div>
-		<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+		<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
 			<h1>Answers To Common Questions</h1>
 		</div>
 		<ul>
