@@ -10,7 +10,7 @@ const VirtualBox = () => (
 			<a
 				target="_blank"
 				rel="noopener noreferrer"
-				href="https://github.com/flatiron-labs/technical-coach-resources/blob/master/virtual-box-setup-errors-and-resources.md#tutorial-how-to-enable-vt-x"
+				href="https://github.com/flatiron-labs/technical-coach-resources/blob/master/virtual-box-setup-errors-and-resources.md"
 				className="btn btn-sm btn-outline-secondary mb-3"
 			>
 				VB Troubleshooting Repo
