@@ -53,7 +53,7 @@ const JiraTickets = () => {
 
 			<div className="table-responsive jira-table">
 				<div className="d-flex justify-content-between align-items-end">
-					<h3>Jira Issue Priority Definitions</h3>
+					<h2>Jira Issue Priority Definitions</h2>
 					<small>
 						<a
 							target="_blank"

@@ -6,7 +6,7 @@ import { YouTube, FileText, Slack, Copy, Users, MessageCircle } from '../compone
 
 const QuickLinks = () => (
 	<div className="mb-4">
-		<h3>Quick Links</h3>
+		<h2>Quick Links</h2>
 
 		<div className="btn-toolbar mb-2 mb-md-3">
 			<div className="btn-group mr-2 mb-2">
@@ -102,7 +102,7 @@ const QuickLinks = () => (
 				</CopyToClipboard>
 			</div>
 		</div>
-		<h3>Resources for Most Asked About Labs</h3>
+		<h2>Resources for Most Asked About Labs</h2>
 		<div className="btn-group mr-2 mb-2">
 			<a
 				target="_blank"

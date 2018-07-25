@@ -17,7 +17,7 @@ const VirtualBox = () => (
 			</a>
 		</div>
 
-		<h3>Resizing HD in VirtualBox</h3>
+		<h2>Resizing HD in VirtualBox</h2>
 		<ReactPlayer url="https://www.youtube.com/watch?v=q-9r-UGunus&index=1&list=PLi0yUl9brD2OR7dJM_FhoC3EGakbkEljx&t=3s" />
 	</div>
 );

@@ -51,7 +51,7 @@ const GeneralInfo = ({ more = true }) => {
 			<TeamInfo />
 			{more && (
 				<React.Fragment>
-					<h3 id="tcmeetingvideos">TC Meeting Videos</h3>
+					<h2 id="tcmeetingvideos">TC Meeting Videos</h2>
 					<div className="btn-group mr-2 mb-2">
 						<a
 							target="_blank"
@@ -62,7 +62,7 @@ const GeneralInfo = ({ more = true }) => {
 							Feb 2018 (Study Group Training)
 						</a>
 					</div>
-					<h3>Hours, Breaks, Meetings, and Holidays</h3>
+					<h2>Hours, Breaks, Meetings, and Holidays</h2>
 					<NavCard snippets={shifts} />
 
 					<h2>Summer Schedule (All times are in ET)</h2>

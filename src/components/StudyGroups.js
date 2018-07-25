@@ -80,7 +80,7 @@ const StudyGroups = ({ more = true }) => {
 			<br />
 			{more && (
 				<React.Fragment>
-					<h3>Training</h3>
+					<h2>Training</h2>
 					<div className="list-group mb-4">
 						{training.map((link, i) => (
 							<a

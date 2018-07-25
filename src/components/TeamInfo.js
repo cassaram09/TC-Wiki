@@ -3,7 +3,7 @@ import React from 'react';
 const TeamInfo = () => (
 	<div className="row mb-4">
 		<div className="col-lg-5">
-			<h3>TC Teams</h3>
+			<h2>TC Teams</h2>
 			<div className="table-responsive">
 				<table className="table table-striped table-sm">
 					<thead>
@@ -70,7 +70,7 @@ const TeamInfo = () => (
 				rel="noopener noreferrer"
 				href="http://help.learn.co/instructional-support/receiving-course-support/who-are-the-section-leads"
 			>
-				<h3>Section Leads</h3>
+				<h2>Section Leads</h2>
 			</a>
 
 			<div className="table-responsive">
