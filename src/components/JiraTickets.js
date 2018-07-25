@@ -1,84 +1,55 @@
 import React from 'react';
+import NavCard from './NavCard';
 
 const JiraTickets = () => {
+	const jira = [
+		{
+			title: 'Creating a Ticket',
+			tag: 'creatingTicket',
+			body: `<p>
+			While creating the Jira ticket if possible stay on with student to get all the neseccary info -
+			if not, don't <code>qbot done</code> the question until the ticket is done (let the dispatcher
+			know). To create a Jira ticket click the button at the bottom of any chat:
+		</p>
+		<img src="/log-bug-report.png" alt="" class="img-thumbnail mb-3" />
+		<br />
+
+		<div class="btn-group">
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/flatiron-labs/learn-support/blob/master/escalation.md#how-to-report-an-issue-through-jira"
+				class="btn btn-sm btn-outline-secondary"
+			>
+				How to put in a Jira Ticket
+			</a>
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/flatiron-labs/technical-coach-resources/blob/master/jira-tickets.md"
+				class="btn btn-sm btn-outline-secondary"
+			>
+				How to create a good Jira ticket
+			</a>`
+		},
+		{
+			title: 'Access',
+			tag: 'access',
+			body: `<p class="text-warning">
+			Please let your TC Lead or Ruth know immediately if you <strong>do not have access</strong> to
+			Jira.
+		</p>`
+		}
+	];
+
+
 	return (
 		<div>
 			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 				<h1>Jira Tickets</h1>
 			</div>
-			<div className="card mb-3">
-				<div className="card-header">
-					<ul className="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-						<li className="nav-item">
-							<a
-								className="nav-link active"
-								id="createTicket-tab"
-								data-toggle="tab"
-								href="#createTicket"
-								role="tab"
-								aria-controls="createTicket"
-								aria-selected="true"
-							>
-								Creating a Ticket
-							</a>
-						</li>
-						<li className="nav-item">
-							<a
-								className="nav-link"
-								id="access-tab"
-								data-toggle="tab"
-								href="#access"
-								role="tab"
-								aria-controls="access"
-								aria-selected="false"
-							>
-								Access
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div className="tab-content " id="myTabContent">
-					<div
-						className="tab-pane fade show active card-body"
-						id="createTicket"
-						role="tabpanel"
-						aria-labelledby="createTicket-tab"
-					>
-						<p>
-							While creating the Jira ticket if possible stay on with student to get all the neseccary info -
-							if not, don't <code>qbot done</code> the question until the ticket is done (let the dispatcher
-							know). To create a Jira ticket click the button at the bottom of any chat:
-						</p>
-						<img src="/log-bug-report.png" alt="" class="img-thumbnail mb-3" />
-						<br />
-
-						<div className="btn-group">
-							<a
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://github.com/flatiron-labs/learn-support/blob/master/escalation.md#how-to-report-an-issue-through-jira"
-								className="btn btn-sm btn-outline-secondary"
-							>
-								How to put in a Jira Ticket
-							</a>
-							<a
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://github.com/flatiron-labs/technical-coach-resources/blob/master/jira-tickets.md"
-								className="btn btn-sm btn-outline-secondary"
-							>
-								How to create a good Jira ticket
-							</a>
-						</div>
-					</div>
-					<div className="tab-pane fade card-body" id="access" role="tabpanel" aria-labelledby="access-tab">
-						<p class="text-warning">
-							Please let your TC Lead or Ruth know immediately if you <strong>do not have access</strong> to
-							Jira.
-						</p>
-					</div>
-				</div>
-			</div>
+		
+			<NavCard snippets={jira} />
 
 			<div className="table-responsive jira-table">
 				<div className="d-flex justify-content-between align-items-end">
