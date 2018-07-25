@@ -5,7 +5,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { YouTube, FileText, Slack, Copy, Users, MessageCircle } from '../components/Svg';
 
 const QuickLinks = () => (
-	<div className="mb-4">
+	<div className="mb-3">
 		<h3>Quick Links</h3>
 
 		<div className="btn-toolbar mb-2 mb-md-3">

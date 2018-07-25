@@ -12,6 +12,10 @@ a {
     color: #32cefe;
 }
 
+a:hover {
+    color: #14a7d4;
+}
+
 /* Headlines */
 
 h1,
