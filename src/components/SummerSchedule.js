@@ -1,9 +1,13 @@
 import React from 'react';
 
 export const AaqSchedule = () => (
-	<div className="mb-3 table-responsive">
-		<h4>Monday - Thursday</h4>
+	<div className="mb-4 table-responsive">
 		<table className="table table-bordered table-sm table-striped">
+			<thead>
+				<tr>
+					<td colSpan="17"><strong>Monday - Thursday</strong></td>
+				</tr>
+			</thead>
 			<thead>
 				<tr>
 					<td>8AM</td>
@@ -39,72 +43,111 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="5">8PM - 1AM</td>
+					<td colSpan="5" class="table-orange">
+						8PM - 1AM
+					</td>
 				</tr>
 				<tr>
 					<td />
 					<td />
 					<td />
-					<td colSpan="4">11AM - 3PM (MATT)</td>
-					<td colSpan="5">3PM - 8PM (AMELIE)</td>
-					<td colSpan="5">8PM - 1AM</td>
+					<td colSpan="4" class="table-warning">
+						11AM - 3PM (MATT)
+					</td>
+					<td colSpan="5" class="table-secondary">
+						3PM - 8PM (AMELIE)
+					</td>
+					<td colSpan="5" class="table-orange">
+						8PM - 1AM
+					</td>
 				</tr>
 				<tr>
 					<td />
 					<td />
 					<td />
-					<td colSpan="4">11AM - 3PM</td>
-					<td colSpan="4">3PM - 7PM</td>
+					<td colSpan="4" class="table-warning">
+						11AM - 3PM
+					</td>
+					<td colSpan="4" class="table-secondary">
+						3PM - 7PM
+					</td>
 					<td />
 					<td />
 					<td />
-					<td />
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<td />
-					<td />
-					<td />
-					<td colSpan="4">11AM - 3PM</td>
-					<td colSpan="4">3PM - 7PM</td>
-					<td colSpan="4">7PM - 11PM (DUSTIN)</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<td />
-					<td />
-					<td />
-					<td colSpan="4">11AM - 3PM</td>
-					<td colSpan="4">3PM - 7PM</td>
-					<td colSpan="4">7PM - 11PM</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<td />
-					<td colSpan="4">9AM - 1PM</td>
-					<td colSpan="4">1PM - 5PM</td>
-					<td colSpan="5">5PM - 10PM</td>
 					<td />
 					<td />
 					<td />
 				</tr>
 				<tr>
 					<td />
-
-					<td colSpan="4">8AM - 12PM (ERIKA)</td>
-					<td colSpan="4">1PM - 5PM</td>
-					<td colSpan="5">5PM - 10PM</td>
+					<td />
+					<td />
+					<td colSpan="4" class="table-warning">
+						11AM - 3PM
+					</td>
+					<td colSpan="4" class="table-secondary">
+						3PM - 7PM
+					</td>
+					<td colSpan="4" class="table-info">
+						7PM - 11PM (DUSTIN)
+					</td>
+					<td />
+					<td />
+				</tr>
+				<tr>
+					<td />
+					<td />
+					<td />
+					<td colSpan="4" class="table-warning">
+						11AM - 3PM
+					</td>
+					<td colSpan="4" class="table-secondary">
+						3PM - 7PM
+					</td>
+					<td colSpan="4" class="table-info">
+						7PM - 11PM
+					</td>
+					<td />
+					<td />
+				</tr>
+				<tr>
+					<td />
+					<td colSpan="4" class="table-danger">
+						9AM - 1PM
+					</td>
+					<td colSpan="4" class="table-success">
+						1PM - 5PM
+					</td>
+					<td colSpan="5" class="table-primary">
+						5PM - 10PM
+					</td>
+					<td />
+					<td />
+					<td />
+				</tr>
+				<tr>
+					<td colSpan="5" class="table-danger">
+						8AM - 12PM (ERIKA)
+					</td>
+					<td colSpan="4" class="table-success">
+						1PM - 5PM
+					</td>
+					<td colSpan="5" class="table-primary">
+						5PM - 10PM
+					</td>
 					<td />
 					<td />
 					<td />
 				</tr>
 			</tbody>
 		</table>
-		<h4>Friday - Sunday</h4>
+
 		<table className="table table-bordered table-sm table-striped">
+			<thead>
+				<tr>
+					<td colSpan="17"><strong>Friday - Sunday</strong></td>
+				</tr>
+			</thead>
 			<thead>
 				<tr>
 					<td>8AM</td>
@@ -139,32 +182,52 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="5">7PM - 12AM</td>
+					<td colSpan="5" class="table-info">
+						7PM - 12AM
+					</td>
 					<td />
 				</tr>
 				<tr>
 					<td />
 					<td />
 					<td />
-					<td colSpan="4">11AM - 3PM</td>
-					<td colSpan="4">3PM - 7PM</td>
-					<td colSpan="5">7PM - 12AM</td>
+					<td colSpan="4" class="table-warning">
+						11AM - 3PM
+					</td>
+					<td colSpan="4" class="table-secondary">
+						3PM - 7PM
+					</td>
+					<td colSpan="5" class="table-info">
+						7PM - 12AM
+					</td>
 					<td />
 				</tr>
 				<tr>
 					<td />
-					<td colSpan="4">9AM - 1PM</td>
-					<td colSpan="4">1PM - 5PM</td>
-					<td colSpan="5">5PM - 10PM</td>
+					<td colSpan="4" class="table-danger">
+						9AM - 1PM
+					</td>
+					<td colSpan="4" class="table-success">
+						1PM - 5PM
+					</td>
+					<td colSpan="5" class="table-primary">
+						5PM - 10PM
+					</td>
 					<td />
 					<td />
 					<td />
 				</tr>
 				<tr>
 					<td />
-					<td colSpan="4">9AM - 1PM</td>
-					<td colSpan="4">1PM - 5PM</td>
-					<td colSpan="5">5PM - 10PM</td>
+					<td colSpan="4" class="table-danger">
+						9AM - 1PM
+					</td>
+					<td colSpan="4" class="table-success">
+						1PM - 5PM
+					</td>
+					<td colSpan="5" class="table-primary">
+						5PM - 10PM
+					</td>
 					<td />
 					<td />
 					<td />
@@ -176,7 +239,7 @@ export const AaqSchedule = () => (
 
 export const StudyGroupSchedule = () => (
 	<div className="table-responsive">
-		<table className="table table-bordered table-sm mb-3 table-striped">
+		<table className="table table-bordered table-sm mb-4 table-striped">
 			<thead>
 				<tr>
 					<th>SUNDAY</th>
@@ -191,66 +254,66 @@ export const StudyGroupSchedule = () => (
 
 			<tbody>
 				<tr>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
-					<td>10AM - 11AM</td>
+					<td class="table-success">10AM - 11AM</td>
+					<td class="table-success">10AM - 11AM</td>
+					<td class="table-success">10AM - 11AM</td>
+					<td class="table-success">10AM - 11AM</td>
+					<td class="table-success">10AM - 11AM</td>
+					<td class="table-success">10AM - 11AM</td>
+					<td class="table-success">10AM - 11AM</td>
 				</tr>
 				<tr>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
-					<td>11AM - 12PM</td>
+					<td class="table-danger">11AM - 12PM</td>
+					<td class="table-danger">11AM - 12PM</td>
+					<td class="table-danger">11AM - 12PM</td>
+					<td class="table-danger">11AM - 12PM</td>
+					<td class="table-danger">11AM - 12PM</td>
+					<td class="table-danger">11AM - 12PM</td>
+					<td class="table-danger">11AM - 12PM</td>
 				</tr>
 				<tr>
-					<td>12PM - 1PM</td>
+					<td class="table-info">12PM - 1PM</td>
 					<td />
 					<td />
 					<td />
 					<td />
 					<td />
-					<td>12PM - 1PM</td>
+					<td class="table-info">12PM - 1PM</td>
 				</tr>
 
 				<tr>
 					<td />
-					<td>8PM - 9PM</td>
-					<td>8PM - 9PM</td>
-					<td>8PM - 9PM</td>
-					<td>8PM - 9PM</td>
+					<td class="table-primary">8PM - 9PM</td>
+					<td class="table-primary">8PM - 9PM</td>
+					<td class="table-primary">8PM - 9PM</td>
+					<td class="table-primary">8PM - 9PM</td>
 					<td />
 					<td />
 				</tr>
 				<tr>
 					<td />
-					<td>8PM - 9PM</td>
-					<td>8PM - 9PM</td>
-					<td>9PM - 10PM</td>
-					<td>8PM - 9PM</td>
+					<td class="table-primary">8PM - 9PM</td>
+					<td class="table-primary">8PM - 9PM</td>
+					<td class="table-warning">9PM - 10PM</td>
+					<td class="table-primary">8PM - 9PM</td>
 					<td />
 					<td />
 				</tr>
 				<tr>
 					<td />
-					<td>9PM - 10PM</td>
-					<td>9PM - 10PM</td>
+					<td class="table-warning">9PM - 10PM</td>
+					<td class="table-warning">9PM - 10PM</td>
 					<td />
-					<td>9PM - 10PM</td>
+					<td class="table-warning">9PM - 10PM</td>
 					<td />
 					<td />
 				</tr>
 				<tr>
 					<td />
 					<td />
-					<td>9PM - 10PM</td>
+					<td class="table-warning">9PM - 10PM</td>
 					<td />
-					<td>9PM - 10PM</td>
+					<td class="table-warning">9PM - 10PM</td>
 					<td />
 					<td />
 				</tr>
@@ -260,8 +323,8 @@ export const StudyGroupSchedule = () => (
 );
 
 export const OneOnOneSchedule = () => (
-	<div className="mb-3">
-		<h5>WEEKDAYS (Sunday - Thursday)</h5>
-		4PM - 7PM and 7PM - 10PM
+	<div className="mb-4">
+		<h5>Weekdays (Sunday - Thursday)</h5>
+		<p>4PM - 7PM and 7PM - 10PM</p>
 	</div>
 );
