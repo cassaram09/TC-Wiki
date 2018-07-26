@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import { Book, Users, File, Info, Box, Code, Rss, Flag, BookOpen } from './Svg';
+import { Book, Users, File, Info, Box, Code, Rss, Flag, BookOpen, Heart, ArrowUp, ArrowDown } from './Svg';
 
 const Sidebar = ({ user }) => {
 	return (
@@ -92,6 +92,13 @@ const Sidebar = ({ user }) => {
 					</ul>
 				</div>
 			</nav>
+
+			<li className="nav-item feedback-nav-item">
+				<NavLink exact to="/feedback" className="nav-link pl-0" title="Feedback">
+					<Heart />
+					<span className="d-none d-md-inline">Feedback</span>
+				</NavLink>
+			</li>
 		</aside>
 	);
 };

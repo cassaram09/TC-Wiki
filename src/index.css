@@ -61,7 +61,7 @@ code {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border: 1px solid rgb(233, 233, 233);
-    background-color: rgb(243, 243, 243, .5);
+    background-color: rgb(243, 243, 243, 0.5);
     padding: 2px 4px;
     color: #6c757d;
 }
@@ -125,6 +125,30 @@ pre code {
 .sidebar .profile-name {
     position: relative;
     top: 4px;
+}
+
+.feedback-nav-item {
+    padding: .2rem 0 0 1rem;
+    list-style: none;
+    bottom: 0;
+    position: fixed;
+    z-index: 150;
+    height: 3rem;
+}
+
+.sidebar .feedback-nav-item .nav-link {
+    color: #6c757d;
+}
+
+.sidebar .feedback-nav-item .nav-link.active,
+.feedback-nav-item a:hover {
+    color: #32cefe !important;
+    fill: #32cefe;
+}
+
+.feedback-nav-item svg {
+    fill: #32cefe;
+    color: #32cefe !important;
 }
 
 /* Content */
@@ -207,6 +231,10 @@ pre code {
 
 .press-button-text {
     float: right;
+}
+
+.welcome-text svg {
+    color: #2dbbe6;
 }
 
 /* Table */
@@ -374,6 +402,21 @@ ul.timeline h5 {
 @media (max-width: 768px) {
     [role="main"] {
         padding-top: 0;
+    }
+    .feedback-nav-item svg {
+        fill: none;
+        color: white !important;
+    }
+    .feedback-nav-item:hover svg {
+        color: #14a7d4 !important;
+        fill: #14a7d4;
+    }
+    .feedback-nav-item {
+        background-color: #14a7d47a;
+    }
+    .sidebar .feedback-nav-item .nav-link.active svg {
+        color: #14a7d4 !important;
+        fill: #14a7d4;
     }
 }
 

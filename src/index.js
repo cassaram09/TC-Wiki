@@ -25,6 +25,7 @@ import GeneralInfo from './components/GeneralInfo';
 import JiraTickets from './components/JiraTickets';
 import CommonErrors from './components/CommonErrors';
 import Learning from './components/Learning';
+import Feedback from './components/Feedback';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
@@ -52,6 +53,7 @@ ReactDOM.render(
 											<Route exact path="/jira-tickets" component={JiraTickets} />
 											<Route exact path="/common-errors" component={CommonErrors} />
 											<Route exact path="/learning" component={Learning} />
+											<Route exact path="/feedback" component={Feedback} />
 										</Switch>
 									</main>
 								</div>

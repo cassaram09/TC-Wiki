@@ -162,3 +162,26 @@ export const ArrowUp = () =>
 			<polyline points="5 12 12 5 19 12" />
 		</React.Fragment>
 	);
+
+export const Heart = () =>
+	svgBase(
+		<React.Fragment>
+			<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+		</React.Fragment>
+	);
+
+export const ArrowDown = () =>
+	svgBase(
+		<React.Fragment>
+			<line x1="12" y1="5" x2="12" y2="19" />
+			<polyline points="19 12 12 19 5 12" />
+		</React.Fragment>
+	);
+
+export const ArrowDownLeft = () =>
+	svgBase(
+		<React.Fragment>
+			<line x1="17" y1="7" x2="7" y2="17" />
+			<polyline points="17 17 7 17 7 7" />
+		</React.Fragment>
+	);

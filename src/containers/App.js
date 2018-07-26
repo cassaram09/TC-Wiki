@@ -8,6 +8,7 @@ import OneOnOnes from '../components/OneOnOnes';
 import CurriculumUpdates from '../components/CurriculumUpdates';
 import QuickLinks from '../components/QuickLinks';
 import GeneralInfo from '../components/GeneralInfo';
+import { ArrowDownLeft } from '../components/Svg';
 
 const App = () => (
 	<div className="row">
@@ -15,10 +16,10 @@ const App = () => (
 			<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom ">
 				<h1>Welcome to the TC Dashboard</h1>
 			</div>
-			<p>
+			<p className="welcome-text">
 				This is a place where all the TC Resources are collected to help you find things more easily. If you
-				feel like there is something missing or there is a feature you would like to see, please send me
-				message on slack @amelie - any kind of feedback is welcome.
+				feel like there is something missing or there is a feature you would like to see, please leave some feedback on the feedback page (bottom left corner <ArrowDownLeft />) or send me message on slack @amelie - any kind of feedback is welcome.
+				
 			</p>
 			<SearchResults />
 			<QuickLinks />
