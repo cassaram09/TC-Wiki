@@ -1,4 +1,5 @@
 import * as firebase from 'firebase';
+require('firebase/firestore');
 
 // Initialize Firebase
 var config = {
@@ -14,3 +15,5 @@ firebase.initializeApp(config);
 export const auth = firebase.auth();
 export const githubProvider = new firebase.auth.GithubAuthProvider();
 githubProvider.addScope('repo');
+
+export const feedbackDb = firebase.firestore().collection('feedback');
