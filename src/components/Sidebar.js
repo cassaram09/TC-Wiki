@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import { Book, Users, File, Info, Box, Code, Rss, Flag, BookOpen, Heart, ArrowUp, ArrowDown } from './Svg';
+import { Book, Users, File, Info, Box, Code, Rss, Flag, BookOpen, Heart } from './Svg';
 
 const Sidebar = ({ user }) => {
 	return (

@@ -43,7 +43,7 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="5" class="table-orange">
+					<td colSpan="5" className="table-orange">
 						8PM - 1AM
 					</td>
 				</tr>
@@ -51,13 +51,13 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="4" class="table-warning">
+					<td colSpan="4" className="table-warning">
 						11AM - 3PM (MATT)
 					</td>
-					<td colSpan="5" class="table-secondary">
+					<td colSpan="5" className="table-secondary">
 						3PM - 8PM (AMELIE)
 					</td>
-					<td colSpan="5" class="table-orange">
+					<td colSpan="5" className="table-orange">
 						8PM - 1AM
 					</td>
 				</tr>
@@ -65,10 +65,10 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="4" class="table-warning">
+					<td colSpan="4" className="table-warning">
 						11AM - 3PM
 					</td>
-					<td colSpan="4" class="table-secondary">
+					<td colSpan="4" className="table-secondary">
 						3PM - 7PM
 					</td>
 					<td />
@@ -82,13 +82,13 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="4" class="table-warning">
+					<td colSpan="4" className="table-warning">
 						11AM - 3PM
 					</td>
-					<td colSpan="4" class="table-secondary">
+					<td colSpan="4" className="table-secondary">
 						3PM - 7PM
 					</td>
-					<td colSpan="4" class="table-info">
+					<td colSpan="4" className="table-info">
 						7PM - 11PM (DUSTIN)
 					</td>
 					<td />
@@ -98,13 +98,13 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="4" class="table-warning">
+					<td colSpan="4" className="table-warning">
 						11AM - 3PM
 					</td>
-					<td colSpan="4" class="table-secondary">
+					<td colSpan="4" className="table-secondary">
 						3PM - 7PM
 					</td>
-					<td colSpan="4" class="table-info">
+					<td colSpan="4" className="table-info">
 						7PM - 11PM
 					</td>
 					<td />
@@ -112,13 +112,13 @@ export const AaqSchedule = () => (
 				</tr>
 				<tr>
 					<td />
-					<td colSpan="4" class="table-danger">
+					<td colSpan="4" className="table-danger">
 						9AM - 1PM
 					</td>
-					<td colSpan="4" class="table-success">
+					<td colSpan="4" className="table-success">
 						1PM - 5PM
 					</td>
-					<td colSpan="5" class="table-primary">
+					<td colSpan="5" className="table-primary">
 						5PM - 10PM
 					</td>
 					<td />
@@ -126,13 +126,13 @@ export const AaqSchedule = () => (
 					<td />
 				</tr>
 				<tr>
-					<td colSpan="5" class="table-danger">
+					<td colSpan="5" className="table-danger">
 						8AM - 12PM (ERIKA)
 					</td>
-					<td colSpan="4" class="table-success">
+					<td colSpan="4" className="table-success">
 						1PM - 5PM
 					</td>
-					<td colSpan="5" class="table-primary">
+					<td colSpan="5" className="table-primary">
 						5PM - 10PM
 					</td>
 					<td />
@@ -182,7 +182,7 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="5" class="table-info">
+					<td colSpan="5" className="table-info">
 						7PM - 12AM
 					</td>
 					<td />
@@ -191,26 +191,26 @@ export const AaqSchedule = () => (
 					<td />
 					<td />
 					<td />
-					<td colSpan="4" class="table-warning">
+					<td colSpan="4" className="table-warning">
 						11AM - 3PM
 					</td>
-					<td colSpan="4" class="table-secondary">
+					<td colSpan="4" className="table-secondary">
 						3PM - 7PM
 					</td>
-					<td colSpan="5" class="table-info">
+					<td colSpan="5" className="table-info">
 						7PM - 12AM
 					</td>
 					<td />
 				</tr>
 				<tr>
 					<td />
-					<td colSpan="4" class="table-danger">
+					<td colSpan="4" className="table-danger">
 						9AM - 1PM
 					</td>
-					<td colSpan="4" class="table-success">
+					<td colSpan="4" className="table-success">
 						1PM - 5PM
 					</td>
-					<td colSpan="5" class="table-primary">
+					<td colSpan="5" className="table-primary">
 						5PM - 10PM
 					</td>
 					<td />
@@ -219,13 +219,13 @@ export const AaqSchedule = () => (
 				</tr>
 				<tr>
 					<td />
-					<td colSpan="4" class="table-danger">
+					<td colSpan="4" className="table-danger">
 						9AM - 1PM
 					</td>
-					<td colSpan="4" class="table-success">
+					<td colSpan="4" className="table-success">
 						1PM - 5PM
 					</td>
-					<td colSpan="5" class="table-primary">
+					<td colSpan="5" className="table-primary">
 						5PM - 10PM
 					</td>
 					<td />
@@ -254,66 +254,66 @@ export const StudyGroupSchedule = () => (
 
 			<tbody>
 				<tr>
-					<td class="table-success">10AM - 11AM</td>
-					<td class="table-success">10AM - 11AM</td>
-					<td class="table-success">10AM - 11AM</td>
-					<td class="table-success">10AM - 11AM</td>
-					<td class="table-success">10AM - 11AM</td>
-					<td class="table-success">10AM - 11AM</td>
-					<td class="table-success">10AM - 11AM</td>
+					<td className="table-success">10AM - 11AM</td>
+					<td className="table-success">10AM - 11AM</td>
+					<td className="table-success">10AM - 11AM</td>
+					<td className="table-success">10AM - 11AM</td>
+					<td className="table-success">10AM - 11AM</td>
+					<td className="table-success">10AM - 11AM</td>
+					<td className="table-success">10AM - 11AM</td>
 				</tr>
 				<tr>
-					<td class="table-danger">11AM - 12PM</td>
-					<td class="table-danger">11AM - 12PM</td>
-					<td class="table-danger">11AM - 12PM</td>
-					<td class="table-danger">11AM - 12PM</td>
-					<td class="table-danger">11AM - 12PM</td>
-					<td class="table-danger">11AM - 12PM</td>
-					<td class="table-danger">11AM - 12PM</td>
+					<td className="table-danger">11AM - 12PM</td>
+					<td className="table-danger">11AM - 12PM</td>
+					<td className="table-danger">11AM - 12PM</td>
+					<td className="table-danger">11AM - 12PM</td>
+					<td className="table-danger">11AM - 12PM</td>
+					<td className="table-danger">11AM - 12PM</td>
+					<td className="table-danger">11AM - 12PM</td>
 				</tr>
 				<tr>
-					<td class="table-info">12PM - 1PM</td>
+					<td className="table-info">12PM - 1PM</td>
 					<td />
 					<td />
 					<td />
 					<td />
 					<td />
-					<td class="table-info">12PM - 1PM</td>
+					<td className="table-info">12PM - 1PM</td>
 				</tr>
 
 				<tr>
 					<td />
-					<td class="table-primary">8PM - 9PM</td>
-					<td class="table-primary">8PM - 9PM</td>
-					<td class="table-primary">8PM - 9PM</td>
-					<td class="table-primary">8PM - 9PM</td>
+					<td className="table-primary">8PM - 9PM</td>
+					<td className="table-primary">8PM - 9PM</td>
+					<td className="table-primary">8PM - 9PM</td>
+					<td className="table-primary">8PM - 9PM</td>
 					<td />
 					<td />
 				</tr>
 				<tr>
 					<td />
-					<td class="table-primary">8PM - 9PM</td>
-					<td class="table-primary">8PM - 9PM</td>
-					<td class="table-warning">9PM - 10PM</td>
-					<td class="table-primary">8PM - 9PM</td>
+					<td className="table-primary">8PM - 9PM</td>
+					<td className="table-primary">8PM - 9PM</td>
+					<td className="table-warning">9PM - 10PM</td>
+					<td className="table-primary">8PM - 9PM</td>
 					<td />
 					<td />
 				</tr>
 				<tr>
 					<td />
-					<td class="table-warning">9PM - 10PM</td>
-					<td class="table-warning">9PM - 10PM</td>
+					<td className="table-warning">9PM - 10PM</td>
+					<td className="table-warning">9PM - 10PM</td>
 					<td />
-					<td class="table-warning">9PM - 10PM</td>
+					<td className="table-warning">9PM - 10PM</td>
 					<td />
 					<td />
 				</tr>
 				<tr>
 					<td />
 					<td />
-					<td class="table-warning">9PM - 10PM</td>
+					<td className="table-warning">9PM - 10PM</td>
 					<td />
-					<td class="table-warning">9PM - 10PM</td>
+					<td className="table-warning">9PM - 10PM</td>
 					<td />
 					<td />
 				</tr>

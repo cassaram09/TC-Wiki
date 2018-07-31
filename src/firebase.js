@@ -1,5 +1,6 @@
-import * as firebase from 'firebase';
-require('firebase/firestore');
+import firebase from 'firebase/app'
+import 'firebase/auth'
+import 'firebase/firestore';
 
 // Initialize Firebase
 var config = {
@@ -10,7 +11,12 @@ var config = {
 	storageBucket: 'tc-wiki-faf85.appspot.com',
 	messagingSenderId: '885291438266'
 };
+
 firebase.initializeApp(config);
+
+const firestore = firebase.firestore();
+const settings = {timestampsInSnapshots: true};
+firestore.settings(settings);
 
 export const auth = firebase.auth();
 export const githubProvider = new firebase.auth.GithubAuthProvider();
