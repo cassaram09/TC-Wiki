@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Github, ArrowUp } from './Svg';
 import ReactLoading from 'react-loading';
+
+// Components
+import { Github, ArrowUp } from '../components/Svg';
 
 class CurriculumUpdates extends Component {
 	constructor() {

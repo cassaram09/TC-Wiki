@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Components
-import SearchResults from '../components/SearchResults';
-import Aaq from '../components/Aaq';
-import StudyGroups from '../components/StudyGroups';
-import OneOnOnes from '../components/OneOnOnes';
-import CurriculumUpdates from '../components/CurriculumUpdates';
-import QuickLinks from '../components/QuickLinks';
-import GeneralInfo from '../components/GeneralInfo';
-import { ArrowDownLeft } from '../components/Svg';
+import SearchResults from './SearchResults';
+import Aaq from './Aaq';
+import StudyGroups from './StudyGroups';
+import OneOnOnes from './OneOnOnes';
+import CurriculumUpdates from '../containers/CurriculumUpdates';
+import QuickLinks from './QuickLinks';
+import GeneralInfo from './GeneralInfo';
+import { ArrowDownLeft } from './Svg';
 
 const App = () => (
 	<div className="row">

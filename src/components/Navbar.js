@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { logout } from '../actions/userActions';
 
 // Components
-import SearchBar from './SearchBar';
+import SearchBar from '../containers/SearchBar';
 import { LogOut } from './Svg';
 
 const Navbar = ({ logout }) => (

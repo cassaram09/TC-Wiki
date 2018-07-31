@@ -10,7 +10,7 @@ import thunk from 'redux-thunk';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // Components
-import App from './containers/App';
+import App from './components/App';
 import Loading from './containers/Loading';
 import Authentication from './containers/Authentication';
 import Login from './containers/Login';
@@ -19,13 +19,13 @@ import Aaq from './components/Aaq';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import OneOnOnes from './components/OneOnOnes';
-import CurriculumUpdates from './components/CurriculumUpdates';
+import CurriculumUpdates from './containers/CurriculumUpdates';
 import VirtualBox from './components/VirtualBox';
 import GeneralInfo from './components/GeneralInfo';
 import JiraTickets from './components/JiraTickets';
 import CommonErrors from './components/CommonErrors';
 import Learning from './components/Learning';
-import Feedback from './components/Feedback';
+import Feedback from './containers/Feedback';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
