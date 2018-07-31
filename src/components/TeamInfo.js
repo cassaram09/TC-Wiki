@@ -42,18 +42,24 @@ const TeamInfo = () => (
 						<tr>
 							<td>Nicole</td>
 							<td>Nick</td>
-							<td>Z</td>
+							<td>PJ</td>
 							<td>Seth</td>
 						</tr>
 						<tr>
 							<td>Rochel</td>
 							<td>Tyler</td>
-							<td>PJ</td>
+							<td>Lindsay</td>
 							<td />
 						</tr>
 						<tr>
 							<td />
 							<td>Mohammed</td>
+							<td></td>
+							<td />
+						</tr>
+						<tr>
+							<td />
+							<td>Omar</td>
 							<td />
 							<td />
 						</tr>
